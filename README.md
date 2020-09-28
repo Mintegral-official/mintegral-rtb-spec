@@ -3,7 +3,7 @@
 ## RTB Spec v2.x
 
 * [English](version2.en.md)
-* [中文](version2.ja.md)
+* [中文](version2.cn.md)
 * [CHANGELOG](CHANGELOG.md)
 
 Bid Request/Response Examples:
