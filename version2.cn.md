@@ -156,7 +156,7 @@ Serialize format: JSON only.
  * Only one of the "site" and “app” sections will be necessary.
 
 
- #### Object: Imp
+ #### imp Object
 
 | 字段	| 类型	| 描述 |
 | ---|---|---|
@@ -176,3 +176,65 @@ Serialize format: JSON only.
 |secure | integer; required|	标识展示请求是否需要使用HTTPS，默认0, 0-标识不需要使用安全链路； 1-标识需要使用安全链路|
 |~~iframebuster~~|array of strings |特定交易支持的iframe buster的名字数组|
 |~~exp~~|	integer|	建议广告展示有效时间窗口|
+
+
+#### banner Object
+
+| 字段	| 类型 	| 描述 |
+| ---|---|---|
+|format	|array of format object|	若广告位可兼容多组宽高，则通过该字段列举可兼容的多组宽高|
+|w	|integer |	广告位宽度，单位为设备独立像素|
+|h	|integer |	广告位高度，单位为设备独立像素|
+|id	|string  |banner 对象的唯一标识；在一个 Ad 中包含 Banner 与 Video 的时候使用|
+|btype|	array of integer |	限制不可投放的banner类型，枚举值参考附录Banner Ad Types|
+|battr|	array of integer |	限制不可投放的物料属性，枚举值参考附录Creative Attributes|
+|pos|	integer |	广告位置，枚举值参考附录Ad Position|
+|mimes|	array of strings;required|	支持的内容 mime-type；包括但不仅限于“application/javascript”, “image/jpg”, and “image/gif”|
+|~~topfram~~|	integer |	banner是在顶层frame中而不是iframe中，0-不是; 1-是|
+|~~expdir~~|	array of integer|	banner可以扩展的方向，参考表附录Expandable Direction|
+|api| array of integer |	该次展示可支持的 API 框架；枚举值释义参考附录API Frameworks；该字段缺省表示所有枚举值均不支持|
+|~~vcm~~|	integer	|	当banner object作为video objecthttp://dev.mintegral.com/doc/adx/cn/#frc12_1的伴随广告时，标识伴随广告的渲染模式；0-concurrent, 1-endcard|
+
+#### format Object
+
+| 字段	| 类型 	| 描述 |
+| ---|---|---|
+|w	|integer;required |	广告位宽度，单位为设备独立像素|
+|h	|integer;required |	广告位高度，单位为设备独立像素|
+
+
+#### video Object
+
+| 字段	| 类型 	| 描述 |
+|---|---|---|
+|mimes|array of strings; required |支持的内容 mime-type；包括但不仅限于“video/mp4”；|
+|minduration	|integer |	最小的视频长度， 以秒为单位；|
+|maxduration	|integer |	最大的视频长度， 以秒为单位；|
+|protocols	|array of integer |	支持的视频竞价响应协议；枚举值参考附录Protocols|
+|w|	integer|视频播放器的宽度，单位为像素|
+|h|	integer	|视频播放器的高度，单位为像素|
+|~~startdelay~~	|integer |视频前，中及之后的广告位中视频广告的启动延时，以秒为单位,枚举值参考附录Start Delay|
+|~~placement~~	|integer |广告位类型；枚举值参考Video Placement Types；|
+|linearity	|integer |展示是否是线性的，1-线性；2-非线性；|
+|skip	|integer |传 0 表示不支持用户 skip，传 1 表示支持用户 skip；|
+|~~skipmin~~|	integer	|最小可跳过的广告总时长；超过该时长的广告才支持跳过；|
+|~~skipafter~~	|integer |广告播放多少秒后可跳过；|
+|sequence	|integer |如果在同一个竞价请求中提供了多个展示， 则需要考虑多个物料传输的顺序|
+|battr	|array of integer |限制不可投放的物料属性，枚举值参考附录Creative Attributes|
+|~~maxextended~~	|integer |	最大的视频广告延长时间长度（如果支持延长）-1：表示允许延时，且没有时间限制空或者0：表示不允许延长大于0：表示可以延长的时间长度比maxduration大的值|
+|minbitrate	|integer |最小的比特率，以 Kbps 为单位；缺省表示不限制|
+|maxbitrate	|integer |最大的比特率，以 Kbps 为单位；缺省表示不限制|
+|~~boxingallowed~~	|integer |是否允许将4：3的内容展示在16：9的窗口， 0表示不允许，1表示允许|
+|playbackmethod	|array of integer|	允许的播放方式，播放方式和对应的枚举值如下：1: 自动播放（有声）2: 自动播放（静音）3: 点击播放 如果该字段缺省，表示支持全部|
+|~~playbackend~~	|integer |	导致视频播放中断的原因；|
+|delivery	|array of integer|	支持的传输方式，传输方式和对应的枚举值如下：1-Streaming；2-Progressive如果没有指定，表示全部支持|
+|~~pos~~	|integer |	广告位置，枚举值参考附录Ad Position|
+|companionad	| array of banner object |	如果视频支持伴随广告，该字段表示一组 Banner 对象；|
+|api	|array of integer |	该次展示可支持的 API 框架；枚举值参考附录API Frameworks该字段缺省表示所有枚举值均不支持；|
+|companiontype	|array of integer | 否 |	支持的 VAST companion广告类型；如果在companionad 中填充了 Banner 对象则推荐使用；枚举值参考附录Companion Types|
+|ext	|video-ext Object|	否|	见video-ext object|
+
+#### video-ext Object
+| 字段	| 类型 	| 描述 |
+|---|---|---|
+|is_rewarded | bool | 是否是激励视频 |
