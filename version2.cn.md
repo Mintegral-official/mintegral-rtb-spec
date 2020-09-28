@@ -131,26 +131,26 @@ Serialize format: JSON only.
 
 #### Bid Request Object (Top Level)
 
-|  参数名称            | 类型|           是否必传|   描述|
-|---|---|---|---|
- | id |      string  | 是|         MintegralADX提供的bidrequest唯一标识|
- | imp| object array | 是 |一次请求包含一个或以上的impressionobject；每个impressionobject代表一个广告位的请求；具体见imp参数说明 |
- | ~~site~~  |     object     |   否    |     定义site信息|
- | app     | object     |   是      |   定义app信息；具体见[Object App参数说明](#object-app)|
- | device  | object     |   是      |   定义设备信息；具体见[Object Device参数说明](#object-device)|
- | ~~user~~| object     |   否 |    定义用户信息|
- | ~~test~~| integer    |    否|    是否为测试模式|
- | at      |   integer    |    是|   拍卖结算类型，值为1表示一价结算，值为2表示二价结算；|
- | tmax    |   integer    |    否|    DSP广告返回超时时限；|
- | ~~wseat~~|   string array|   否|    买方席位白名单|
- | ~~bseat~~|    string array|   否|    买方席位黑名单|
- | ~~allimps~~|   integer     |   否|     本次展示机会是否覆盖上下文所有广告展示机会|
- | ~~cur~~    |   string array|   否|   返回允许的货币类型|
- | ~~wlang~~  |   string array|   否|   素材语言白名单|
- | bcat    | string array  | 否    | 广告主IAB category黑名单|
- | badv    |  string array|  否|    广告主域名黑名单|
- | bapp    |  string array|  否|     App类广告包名黑名单;  安卓示例 com.amazon.mShop; ios示例：*907394059*
- | ~~source~~|  object|   否 |   ~~流量来源信息~~ |
- | regs    | object  |  否 |     政策法规要求；具体见[Object Regs](#object-regs) |
+|  字段    | 类型|   描述|
+|---|---|---|
+ | id |      string; required |         MintegralADX提供的bidrequest唯一标识|
+ | imp| array of imp objects; required  |一次请求包含一个或以上的impressionobject；每个impressionobject代表一个广告位的请求；具体见imp参数说明 |
+ | ~~site~~  | site object  |     定义site信息|
+ | app     | app object   |   定义app信息；具体见[Object App参数说明](#object-app)|
+ | device  | device object; required   |   定义设备信息；具体见[Object Device参数说明](#object-device)|
+ | ~~user~~| object  |    定义用户信息|
+ | ~~test~~| integer |    是否为测试模式|
+ | at      |   integer; required|   拍卖结算类型，值为1表示一价结算，值为2表示二价结算；|
+ | tmax    |   integer |    DSP广告返回超时时限以ms为单位 |
+ | ~~wseat~~|  array of strings|    买方席位白名单|
+ | ~~bseat~~|  array of strings|    买方席位黑名单|
+ | ~~allimps~~|   integer  |     本次展示机会是否覆盖上下文所有广告展示机会|
+ | ~~cur~~    | array of strings|   返回允许的货币类型|
+ | ~~wlang~~  | array of strings|   素材语言白名单|
+ | bcat    | array of strings   | 广告主IAB category黑名单|
+ | badv    | array of strings   |    广告主域名黑名单|
+ | bapp    | array of strings   |     App类广告包名黑名单;  安卓示例 com.amazon.mShop; ios示例：*907394059*
+ | ~~source~~| source object |   ~~流量来源信息~~ |
+ | regs    | regs object  |     政策法规要求；具体见[Object Regs](#object-regs) |
 
  * Only one of the "site" and “app” sections will be necessary.
