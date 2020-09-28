@@ -135,7 +135,7 @@ Serialize format: JSON only.
 |---|---|---|
  | id |      string; required |         MintegralADX提供的bidrequest唯一标识|
  | imp| array of imp objects; required  |一次请求包含一个或以上的impressionobject；每个impressionobject代表一个广告位的请求；具体见imp参数说明 |
- | ~~site~~  | site object  |     定义site信息|
+ | site | site object  |     定义site信息|
  | app     | app object   |   定义app信息；具体见[Object App参数说明](#object-app)|
  | device  | device object; required   |   定义设备信息；具体见[Object Device参数说明](#object-device)|
  | ~~user~~| object  |    定义用户信息|
@@ -154,3 +154,25 @@ Serialize format: JSON only.
  | regs    | regs object  |     政策法规要求；具体见[Object Regs](#object-regs) |
 
  * Only one of the "site" and “app” sections will be necessary.
+
+
+ #### Object: Imp
+
+| 字段	| 类型	| 描述 |
+| ---|---|---|
+|id	|string; required |请求中唯一标识本次出售展示的标识；Mintegral ADX 一次请求只出售一个展示|
+|~~metric~~	|array of metric object |	返回允许的货币类型|
+|banner	|banner object;banner流量必传|	见 Object Banner|
+|video	|video object;video 流量必传|	见 Object Video|
+|audio	|audio object;audio流量必传|	见 Object Audio|
+|native	|native object;native流量必传|	见 Object Native|
+|~~pmp~~ |pmp object |	私有市场交易|
+|~~displaymanager~~	|string |	媒体合作伙伴的名字，|
+|~~displaymanagerver~~	|string |	媒体合作伙伴的版本|
+|instl	|integer |	0-非插屏；1-广告为全屏或者插屏|
+|tagid	|string; required|广告位的唯一标识|
+|bidfloor|	float; required	|本次展示的cpm底价|
+|bidfloorcur| string; required |DSP 竞价货币单位；默认为美元 USD|
+|secure | integer; required|	标识展示请求是否需要使用HTTPS，默认0, 0-标识不需要使用安全链路； 1-标识需要使用安全链路|
+|~~iframebuster~~|array of strings |特定交易支持的iframe buster的名字数组|
+|~~exp~~|	integer|	建议广告展示有效时间窗口|
