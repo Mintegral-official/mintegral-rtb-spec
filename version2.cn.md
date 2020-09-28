@@ -238,3 +238,101 @@ Serialize format: JSON only.
 | 字段	| 类型 	| 描述 |
 |---|---|---|
 |is_rewarded | bool | 是否是激励视频 |
+
+
+#### native Object
+
+| 字段	| 类型	| 描述 |
+|---|---|---|
+| request | string; required |  表示 Native Ad Specification 定义的 native 标签协议； 具体见下文的 [NativeRequest 参数说明](#object-nativerequest)
+|ver |  string | 采用的 Dynamic Native Ads API 的版本|
+|api |  array of integers |        该次展示可支持的 API 框架；枚举值参考[附录API Frameworks](appendix.md#api-frameworks) |
+|battr    |array of integers|        限制的物料属性，枚举值参考[附录Creative Attributes](appendix.md#creative-attributes)|
+
+
+#### app Object
+
+| 字段      | 类型        | 描述                                                            |
+|---------------|----------|------------|
+| id            | string | 表示 adx 内部的 APP id；                                        |
+| name          | string | 表示 adx 内部的 APP 名称；                                      |
+| bundle        | string | 商店应用的包名；安卓示例 com.foo.mygame；ios示例907394059;      |
+| domain        | string | App 的域名，例如 mygame.foo.com                                 |
+| storeurl      | string | APP 的商店链接地址；                                            |
+| cat           | array of strings | APP 的 IAB category；见附录Content Categories                   |
+| ~~sectioncat~~    | array of strings | 应用当前部分的IAB内容类型数组，枚举值参考附录Content Categories |
+| ~~pagecat~~       | array of strings | 应用当前视图的IAB内容类型数组，参考附录Content Categories       |
+| ver           | string | APP 的版本号；                                                  |
+| ~~privacypolicy~~ | integer  | 表示该应用是否有隐私策略， 0-没有；1-有；                       |
+| paid          | integer | 应用是否需要付费， 0-免费；1-付费；                             |
+| publisher     | publisher object | 表示开发者的具体信息，具体 Object Publisher                     |
+| content       | content object  | Content对象， 该应用内容的详细信息                              |
+| keywords      | string  | 逗号分隔的应用的关键字信息                                      |
+
+#### publisher Object
+| 字段 | 类型  | Description                                          |
+|-----------|------|------------------------------------------------------|
+| id        | string | 表示 ADX 内部的开发者 id；                           |
+| ~~name~~      | string  | 开发者名称；                                         |
+| cat       | array of strings | 发布者的IAB内容类型数组， 参考附录Content Categories |
+| ~~domain~~    | string  | 发布者的顶级域名（例如， "publisher.com" )；         |
+
+#### device Object
+
+| 字段      | 类型  | 描述                                                                                                                                                              |
+|----------------|-----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ua             | string | 用户设备 HTTP 请求头中的 User-Agent 字段；                                                                                                                        |
+| geo        | geo object | 表示用户当前位置；                                                                                                                                                |
+| dnt            | integer  | 浏览器在 HTTP 头中设置的标准的“Do Not Track"标识， 0-不限制追踪；1-限制（不允许）追踪 注意，该字段值类型定义与open RTB 2.4版本协议有所不同                        |
+| lmt            | integer  | “限制广告追踪”表示用户对商业追踪行为的授权， 值为 0-不限制追踪；1-限制追踪 注意，该字段值类型定义与open RTB 2.4版本协议有所不同                                   |
+| ip             | string; required | 最接近设备的 IPv4 地址；                                                                                                                                          |
+| ~~ipv6~~           | string   | 最接近设备的 Ipv6 地址；                                                                                                                                          |
+| devicetype     | integer; required | 设备类型；枚举值参考附录Device Type                                                                                                                               |
+| make           | string; required   | 设备制造商，比如“Apple”，未知传 unknown                                                                                                                           |
+| model          | string; required  | 1） android 设备:调用系统接口android.os.Build.MODEL 直接获得； 2） ios 设备：对系统接口返回原始值做转换后得到，取值例如 iPhone5 、 iPhone6s 、 iPhone 6sPlus 等； |
+| os             | string; required  | 操作系统；未知传 unknown                                                                                                                                          |
+| osv            | string; required  | Os 版本；三段式或两段式版本号；                                                                                                                                   |
+| hwv            | string   | 设备硬件版本， 例如 “5S”；                                                                                                                                        |
+| h              | integer  | 屏幕的物理高度， 以像素为单位；                                                                                                                                   |
+| w              | integer  | 屏幕的物理宽度，以像素为单位；                                                                                                                                    |
+| ~~ppi~~            | integer | 以像素每英寸表示的屏幕尺寸；                                                                                                                                      |
+|~~pxratio~~        | float | 设备物理像素与设备无关像素的比率；                                                                                                                                |
+| js             | integer  | 支持javascript, 0-不支持；1-支持；                                                                                                                                |
+| ~~geofetch~~       | integer | 表示该广告位是否为JavaScript代码提供geolocaion API， 0-不提供；1-提供                                                                                             |
+| ~~flashver~~       | string  | 浏览器支持的Flash版本；                                                                                                                                           |
+| language       | string; required  | 设备语言；使用 ISO-639-1-alpha-2；未知传unknown                                                                                                                   |
+| carrier        | string; required | 运营商；字段值采用 MCC 和 MNC 结合的代码， 如46001 表示中国联通；未知传 unknown；                                                                                 |
+| ~~mccmnc~~         | string   | 运营商mcc-mnc代码；                                                                                                                                               |
+| connectiontype | integer;required | 网络连接类型；枚举值参考附录Connection Type                                                                                                                       |
+| ifa            | string  | 广告主标识， 明文表示； Ios 传 idfa，必传； Android 国外传 gaid，国内不传；                                                                                       |
+| imei           | string | 硬件设备 ID，安卓传 IMEI                                                                                                                                          |
+| android_id     | string  | 设备平台 ID，安卓传 Android ID                                                                                                                                    |
+| oaid     | string  | OAID                                                                                                                                   |
+| didsha1        | string  | 硬件设备 ID，安卓传 IMEI，使用 SHA1 哈希算法；                                                                                                                    |
+| didmd5         | string  | 硬件设备 ID，安卓传 IMEI，使用 md5 哈希算法；                                                                                                                     |
+| dpidsha1       | string | 设备平台 ID，安卓传 Android ID，使用 SHA1 哈希算法；                                                                                                              |
+| dpidmd5        | string | 设备平台 ID，安卓传 Android ID，使用 md5 哈希算法；                                                                                                               |
+
+#### geo Object
+
+| 字段    | 类型  | 描述                                                                                                                                                                                                               |
+|---------------|----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| lat           | float | 纬度信息，取值范围-90.0到+90.0， 负值表示南方；                                                                                                                                                                   |
+| lon           | float | 经度信息，取值返回-180.0到+180.0， 负值表示西方；                                                                                                                                                                |
+| type          | integer | 位置信息的源；值为 1 表示 GPS/定位服务；值为 2 表示 IP 地址； 值为 3 表示用户提供；                                                                                                                                |
+| ~~accuracy~~      | integer | 精度，详细到米；当经纬度是通过定位服务获取时，上报该字段；                                                                                                                                                         |
+| ~~lastfix~~       | integer | 生成竞价请求的时间和设备最后一次获取地理位置的时间之间的差别，这个时间差的单位：秒 请注意：设备可能缓存多个不同时间获取的地理位置数据。 在理想状况下，这个数值应该是从此竞价请求里包含的地理位置获取时间开始计算的 |
+| ~~ipservice~~    | integer | 从IP地址分析地理位置的服务方或者供应商（当type = 2的时候）;                                                                                                                                                        |
+| country       | string | ISO-3166-1 Alpha-3 国家码；                                                                                                                                                                                  |
+| region        | string | ISO-3166-2 区域码；                                                                                                                                                                                              |
+|~~regionfips10~~ | string | 国家的区域，使用FIPS 10-4 notation 编码表示，也可用 ISO 3166-2编码表示；                                                                                                                                       |
+| metro         | string  | 谷歌metro code Metro codes 与 Nielsen DMAs 相似，但有一些差异                                                                                                                                                      |
+| city          | string  | 城市名称使用联合国贸易与运输位置码                                                                                                                                                                                 |
+| zip           | string  | 邮政编码或者邮递区号；                                                                                                                                                                                             |
+|~~utcoffse~~     | integer | 本地时间，用比标准UTC时间多加或减少的分钟数来表示；                                                                                                                                                                |
+
+#### regs Object
+
+| 字段 | 类型    | 描述                                                                                                                                  |
+|----------|-------- |---------------------------------|
+| coppa    | integer | 表示该次展示是否遵从 COPPA 法案， 0-不遵从；1-遵从； 对于遵从 COPPA 法案的展示，DSP 必须保证返回的广告的内容和素材符合 COPPA 广告规定 |
