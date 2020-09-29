@@ -269,6 +269,27 @@ Serialize format: JSON only.
 | content       | content object  | Content对象， 该应用内容的详细信息                              |
 | keywords      | string  | 逗号分隔的应用的关键字信息                                      |
 
+#### site Object
+
+| 字段      | 类型        | 描述                                                            |
+|---------------|----------|------------|
+| id            | string | 表示 adx 内部的 Site ID；                                        |
+| name          | string | Site 名称，也可能是开发者的别名；                                      |
+| domain        | string | Site 的域名                                 |
+| storeurl      | string | APP 的商店链接地址；                                            |
+| cat           | array of strings | Site 的 IAB category；见附录Content Categories                   |
+| ~~sectioncat~~    | array of strings | 应用当前部分的IAB内容类型数组，枚举值参考附录Content Categories |
+| ~~pagecat~~       | array of strings | 应用当前视图的IAB内容类型数组，参考附录Content Categories       |
+| page           | string | 发生展示的页面的URL；                                                  |
+| ref           | string | 浏览到当前页面的Referrer URL；                                                  |
+| search           | string | 浏览到当前页面的搜索字符串；                                                  |
+| mobile           | integer | Site页面的布局是否针对于移动设备做了优化 0=no，1=yes                                                  |
+| ~~privacypolicy~~ | integer  | 表示该应用是否有隐私策略， 0-没有；1-有；                       |
+| publisher     | publisher object | 表示开发者的具体信息，具体 Object Publisher                     |
+| content       | content object  | Content对象， 该应用内容的详细信息                              |
+| keywords      | string  | 逗号分隔的应用的关键字信息                                      |
+
+
 #### publisher Object
 | 字段 | 类型  | Description                                          |
 |-----------|------|------------------------------------------------------|
