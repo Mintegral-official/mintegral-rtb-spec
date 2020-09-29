@@ -22,7 +22,6 @@ Moreover, this specification does not contain description of general RTB protoco
   * [c. Bid request parameters](#c-bid-request-parameters)
     * [Bid Request Object (Top Level)](#bid-request-object-top-level)
     * [imp Object](#imp-object)
-    * [source Object](#source-object)
     * [site Object](#site-object)
     * [app Object](#app-object)
     * [publisher Object](#publisher-object)
@@ -34,9 +33,6 @@ Moreover, this specification does not contain description of general RTB protoco
     * [video Object](#video-object)
     * [audio Object](#audio-object)
     * [native Object](#native-object)
-    * [pmp Object](#pmp-object)
-    * [deal Object](#deal-object)
-    * [skadn Request Object](#skadn-request-object)
 * [4. Response specification](#4-response-specification)
   * [a. Bid response parameters](#a-bid-response-parameters)
     * [Bid Response Object (Top Level)](#bid-response-object-top-level)
@@ -138,7 +134,7 @@ Serialize format: JSON only.
  | site | site object  |     定义site信息|
  | app     | app object   |   定义app信息；具体见[Object App参数说明](#object-app)|
  | device  | device object; required   |   定义设备信息；具体见[Object Device参数说明](#object-device)|
- | ~~user~~| object  |    定义用户信息|
+ | user |user object  |    定义用户信息|
  | ~~test~~| integer |    是否为测试模式|
  | at      |   integer; required|   拍卖结算类型，值为1表示一价结算，值为2表示二价结算；|
  | tmax    |   integer |    DSP广告返回超时时限以ms为单位 |
@@ -164,7 +160,7 @@ Serialize format: JSON only.
 |~~metric~~	|array of metric object |	返回允许的货币类型|
 |banner	|banner object;banner流量必传|	见 Object Banner|
 |video	|video object;video 流量必传|	见 Object Video|
-|audio	|audio object;audio流量必传|	见 Object Audio|
+|~~audio~~	|audio object;audio流量必传|	见 Object Audio|
 |native	|native object;native流量必传|	见 Object Native|
 |~~pmp~~ |pmp object |	私有市场交易|
 |~~displaymanager~~	|string |	媒体合作伙伴的名字，|
@@ -288,6 +284,37 @@ Serialize format: JSON only.
 | publisher     | publisher object | 表示开发者的具体信息，具体 Object Publisher                     |
 | content       | content object  | Content对象， 该应用内容的详细信息                              |
 | keywords      | string  | 逗号分隔的应用的关键字信息                                      |
+
+
+#### user Object
+
+| 字段 | 类型  | Description                                          |
+|-----------|------|------------------------------------------------------|
+| id        | string | 交易用户的ID, 推荐id和buyeruid 至少传一个              |
+| buyeruid     | string  | buyer的ID                                         |
+| yob       | integer | 用户出生年份的四位数字 |
+| gender    | string  | 用户的性别，M=male, F=female, O=known to be other        |
+| keywords  | string  | 逗号分割的关键字，兴趣或者意向列表 ｜
+| customdata | string | 可选特性，用于传递给竞拍者的信息，在交易平台的cookie中设置，字符串必须base85编码的cookie|
+| geo       | geo object | 用户Geo的信息 |
+| data   | array of data object | 附加的用户信息，每个Data对象表示一个不同的数据源 |
+
+
+#### data Object
+
+| 字段 | 类型  | Description                                          |
+|-----------|------|------------------------------------------------------|
+| id        | string | 交易特定的数据提供者ID              |
+| name     | string  | 交易特定的数据提供者名称                                         |
+| segment      | array of segment object | 包含数据内容的一组Segment对象 |
+
+#### segment Object
+
+| 字段 | 类型  | Description                                          |
+|-----------|------|------------------------------------------------------|
+| id        | string | 数据提供者的特定数据段的ID              |
+| name     | string  | 数据提供者的特定数据段的名称                                         |
+| value      | string | 表示数据字段的值的字符串 |
 
 
 #### publisher Object
