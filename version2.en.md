@@ -1,20 +1,22 @@
 # Mintegral RTB Specification ver 2.5
 
-Mintegral RTB的协议兼容OpenRTB Version 2.5.
+This specification complies with OpenRTB Version 2.5.
 
-参考 [IAB OpenRTB API Specification Version 2.5](https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-5-FINAL.pdf) 查看更多OpenRTB 2.5协议的细节.
+See [IAB OpenRTB API Specification Version 2.5](https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-5-FINAL.pdf) for details.
 
-### 注意
+### Attention
 
-本协议可能不完整。如果发现任何不足或遇到困惑，请联系负责人: [developer@mintegral.com](mailto:developer@mintegral.com).
+This specification may be incomplete. If you find any inadequacy or encounter confusion, please contact the person in charge: [developer@mintegral.com](mailto:developer@mintegral.com).
 
-此外，该规范不包含对通用RTB协议（例如OpenRTB）的描述.
+Moreover, this specification does not contain description of general RTB protocol (e.g., OpenRTB).
 
 ## Table of Contents
 
-* [1. Request specification](#3-request-specification)
+* [1. cookie sync](#1-cookie-sync)
+* [2. Request specification](#3-request-specification)
   * [a. Endpoint URL](#a-endpoint-url)
-  * [b. Bid request parameters](#b-bid-request-parameters)
+  * [b. OpenRTB Version HTTP Header](#b-openrtb-version-http-header)
+  * [c. Bid request parameters](#c-bid-request-parameters)
     * [Bid Request Object (Top Level)](#bid-request-object-top-level)
     * [imp Object](#imp-object)
     * [site Object](#site-object)
@@ -25,11 +27,10 @@ Mintegral RTB的协议兼容OpenRTB Version 2.5.
     * [geo Object](#geo-object)
     * [banner Object](#banner-object)
     * [format Object](#format-object)
-    * [source Object](#source-object)
     * [video Object](#video-object)
     * [audio Object](#audio-object)
     * [native Object](#native-object)
-* [2. Response specification](#4-response-specification)
+* [3. Response specification](#4-response-specification)
   * [a. Bid response parameters](#a-bid-response-parameters)
     * [Bid Response Object (Top Level)](#bid-response-object-top-level)
     * [seatbid Object](#seatbid-object)
@@ -42,17 +43,58 @@ Mintegral RTB的协议兼容OpenRTB Version 2.5.
     * [fluct transmits according to the following conditions (click beacon):](#fluct-transmits-according-to-the-following-conditions-click-beacon)
   * [c. Macro substitution](#c-macro-substitution)
   * [d. Click Measuring](#d-click-measuring)
-* [3. Code table](#5-code-table)
-* [4. Bid Request/Response Examples](#6-bid-requestresponse-examples)
+* [4. Code table](#5-code-table)
+* [5. Bid Request/Response Examples](#6-bid-requestresponse-examples)
 
 
-## 1. Request specification
+
+## 1. cookie sync
+
+Usually the following sync will be performed, however we are also able to provide specified flows separately.
+
+1. SSP delivers sync image tags of DSP to ad inventories.
+2. DSP redirects to SSP’s sync URL when received access to sync tag.
+3. DSP adds an ID parameter to sync URL as a notification to SSP.
+
+DSP should prepare sync tags for SSP in advance. (DSP reponsibility)
+
+Currently we only support image sync tags and https requests.
+
+Below is an example of sync URLs of mintegral. HTTPs sync is also supported.
+
+    https://cs.mintegral.com/sync/?from=[DSP_NAME]&id=[DSP_USER_ID]
+
+The DSP_NAME parameter will be provided by SSP beforehand (SSP responsibility), please contact SSP for that.
+
+The expiry date of sync is default to 30 days, however it can also be customized to any length. Below is an example of a sync with 90 days of expiry date.
+
+    https://cs.mintegral.com/sync/?from=your_dsp&id=XXXXXX&expire=90
+
+## 2. Request specification
 
 ### a. Endpoint URL
 
-DSP需要提供流量入口的EndPoint，这个EndPoint应该是一个HTTP或者HTTPS的链接地址，支持分地区和广告类型配置不同的EndPiont
+The endpoint URL which will be used by bid request should be passed to SSP. (DSP reponsibility)
 
-### b. Bid request parameters
+SSP conducts bid request with POST method to the specified endpoint URL.
+
+For the optimal performance, DSP should enable HTTP keep-alive whenever possible.
+
+https request is also supported.
+
+Please let us know if we need to set the specific Port.
+
+### b. OpenRTB Version HTTP Header
+
+The OpenRTB Version of the request will be passed in bid request HTTP header as:
+
+    X-OpenRTB-Version: 2.5
+
+The version is in format `<major>.<minor>`, and patch version is not included.
+
+Fluct will follow backward-compatible OpenRTB 2 minor version updates, and the version in HTTP header will be updated, accordingly.
+
+### c. Bid request parameters
 
 Serialize format: JSON only.
 
@@ -349,7 +391,7 @@ Serialize format: JSON only.
 |----------|-------- |---------------------------------|
 | coppa    | integer | 表示该次展示是否遵从 COPPA 法案， 0-不遵从；1-遵从； 对于遵从 COPPA 法案的展示，DSP 必须保证返回的广告的内容和素材符合 COPPA 广告规定 |
 
-## 2. Response specification
+## 3. Response specification
 ### a. Bid response parameters
 DSP 应该使用JSON格式序列化Bid的信息
 
@@ -429,9 +471,9 @@ Mintegral 支持以下宏替换
 |${AUCTION_PRICE}	 |结算价格 |	加密后的结算价格，具体请参考结算价格解密|
 ### d. Click Measuring
 
-## 3. Code table
+## 4. Code table
 
-## 4. Bid Request/Response Examples
+## 5. Bid Request/Response Examples
 
 ### Request Examples
 See [version2.req-examples.md](./version2.req-examples.md) for details.
