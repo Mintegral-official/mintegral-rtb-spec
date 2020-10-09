@@ -387,8 +387,82 @@ Serialize format: JSON only.
 
 ## 4. Response specification
 ### a. Bid response parameters
+DSP 应该使用JSON格式序列化Bid的信息
+
+HTTP 204 No Content 表示不bid
+
+#### Bid Response Object (Top Level)
+| 参数名称 | 类型 | 描述                                                      |
+|----------|-------------|-----------------------------------------------------------|
+| id       | string;required    | 竞价请求的标识，即请求带的 request id；                   |
+| seatbid  | array of seatbid object;required    | 一组 SeatBid 对象， 如果出价，则至少应该填充一个seatbid； |
+| bidid    | string    | 竞拍者生成的响应 ID, 辅助日志或者交易追踪；               |
+| cur      | string   | 出价货币单位，使用 ISO-4217 码；不传默认 USD              |
+| nbr      | integer   | 不出价原因；                                              |
+
+
+#### seatbid Object
+| 参数名称 | 类型 | 描述               |
+|----------|--------------|----------|--------------------------------------------|
+| bid | array of bid object; required| 至少一个 Bid 对象的数组，每个对象关联一个展示。   |
+| seat     | string     | 出价者席位标识， 代表本次出价的出价人；               |
+| group | integer| 1 = 出价方要求对所有展示的出价必须整组胜出，或失败; 0 = 对某一展示的一次出价可以独立胜出，默认值 = 0 ; |
+
+
+#### bid Object
+| 参数名称       | 类型   | 描述                         |
+|----------------|--------------|-------------------------------------------------------|
+| id  | string; required  | 竞拍者生成的竞价 ID，用于记录日志或行为追踪；                     |
+| impid | string; required    | 关联的竞价请求中的 Imp 对象的 ID；          |
+| price          | float; required  | 对该次展示的出价，以 CPM 表示, 默认美元；      |
+| nurl    | string;required   | 胜出通知链接；MTG adx将在广告成功展示时调用该链接；    |
+| burl    | string     | 可计费展示回调；      |
+| lurl    | string     | 竞价失败回调；  |
+| adm     | string;required | 广告素材标记；Native广告形式返回native response； 视频广告形式返回VAST XML;Banner广告形式返回xhtml；|
+| adid    | string     | 竞价的广告的ID， 如果交易胜出，该广告会被发送给媒体；    |
+| adomain | array of strings | 广告主域名， 用于过滤检测；   |
+| bundle  | string; required（下载类广告必传） | 应用的包名信息； 安卓包名示例 com.foo.mygame；ios 包名示例907394059  |
+| iurl    | string  | 用于质量或者安全监测的表示广告活动内容的图像地址； |
+| cid     | string | 广告 id，辅助广告审核；iurl 代表的一组素材   |
+| crid    | string | 一组素材的 id；辅助广告审核  |
+| tactic  | string | 广告投放策略id； |
+| cat     | array of strings  | creative 的 IAB 内容类型；枚举值参考附录Content Categories  |
+| attr    | array of integers  | 描述 creative 的属性集合；枚举值参考附录Creative Attributes   |
+| api     | integer | 该次展示可支持的 API 框架；枚举值参考附录API Frameworks   |
+| protocols | integer  | 支持的视频竞价响应协议；枚举值参考附录Protocols  |
+| qagmediarating | integer  | 表示根据 IAB IGQ 标准的素材内容等级； 枚举值参考附录IQG Media Ratings   |
+| language  | string | 素材语言；设备语言；使用 ISO-639-1-alpha-2；|
+| dealid    | string | 如果该竞价从属于某个私有市场交易， 这个参数包含这个私有市场交易的交易ID； 如果竞拍的展示从属于某个私有市场交易， 那么该竞价必须包含相同的私有市场交易的ID |
+| w    | integer   | 广告的宽度，单位：像素。 |
+| h    | integer   | 广告的高度，单位：像素。 |
+| wratio  | integer    | 广告的相对宽度，单位：像素。  |
+| hratio  | integer   | 广告的相对高度，单位：像素。  |
+| exp     | integer   | 广告从返回到实际展示的有效延迟时间，单位为秒；默认值为 3600；     |
+| ext     | bid-ext object          | 具体见 ext object  |
+
 ### b. impression/click beacon
+DSP在bidresponse中向Mintegral ADX返回nurl和展示监测链接（其中，展示监测链接可选，DSP可不返回）。
+当广告成功在客户端展示时，MTG ADX向DSP同时调nurl和展示监测链接。
+
+为了缩小展示数据差异，建议对于所有广告形式，DSP都返回独立的展示监测链接回收展示数据。
+
+Native image和Native video，DSP通过Native Ads协议的imptrackers字段返回展示监测链接；
+
+Rewarded video 和 Interstitial video，DSP通过VAST的\<impression>标签返回展示监测链接；
+
+Interative ads和Banner，DSP通过 Bidresponse.Seatbid.Bid.Ext.Imptrakers 返回展示监测链接。
+
 ### c. Macro substitution
+Mintegral 支持以下宏替换
+
+| 宏名 | 含义 | 备注 |
+|---|---|---|
+| ${AUCTION_ID} |	竞价请求 ID |	mtg-adx 请求dsp 的request.id |
+| ${AUCTION_BID_ID}	| DSP 竞价响应的 ID	| DSP返回的mtg-adx的BidResponse.BidID |
+|${AUCTION_IMP_ID} |展示 ID |	DSP 返回的 Bid.ImpId|
+|${AUCTION_SEAT_ID} |席位 ID |	DSP返回的BidResponse.SeatBid.Seat|
+|${AUCTION_AD_ID}	 |广告 ID |	广告 ID，Bid.Adid|
+|${AUCTION_PRICE}	 |结算价格 |	加密后的结算价格，具体请参考结算价格解密|
 ### d. Click Measuring
 
 ## 5. Code table
