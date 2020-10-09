@@ -146,11 +146,10 @@ Serialize format: JSON only.
  | bcat    | array of strings   | 广告主IAB category黑名单|
  | badv    | array of strings   |    广告主域名黑名单|
  | bapp    | array of strings   |     App类广告包名黑名单;  安卓示例 com.amazon.mShop; ios示例：*907394059*
- | ~~source~~| source object |   ~~流量来源信息~~ |
+ | source  | source object |   流量来源信息 |
  | regs    | regs object  |     政策法规要求；具体见[Object Regs](#object-regs) |
 
  * Only one of the "site" and “app” sections will be necessary.
-
 
  #### imp Object
 
@@ -197,6 +196,39 @@ Serialize format: JSON only.
 | ---|---|---|
 |w	|integer;required |	广告位宽度，单位为设备独立像素|
 |h	|integer;required |	广告位高度，单位为设备独立像素|
+
+
+#### source Object
+| 字段	| 类型 	| 描述 |
+| ---|---|---|
+|fd	|integer |Entity responsible for the final impression sale decision, where 0 = exchange, 1 = upstream source.|
+|tid	|string | 交易id｜
+|pchain | string | Payment ID chain string containing embedded syntax described in the TAG Payment ID Protocol v1.0|
+|ext | source-ext object | 扩展字段｜
+
+#### source-ext Object
+| 字段	| 类型 	| 描述 |
+| ---|---|---|
+| schain | schain object | schain对象｜
+| omidpn | string | omidpn |
+| omidpv | string | omidpv |
+
+#### schain Object
+| 字段	| 类型 	| 描述 |
+| ---|---|---|
+| ver | string | 协议版本 1.0｜
+| complete | integer | 供应链是否完整 |
+| nodes | array of snode Object | 供应链各节点具体信息 |
+
+#### snode Object
+| 字段	| 类型 	| 描述 |
+| ---|---|---|
+| asi | string | The canonical domain name of the SSP, Exchange, Header Wrapper, etc system that bidders connect to. This may be the operational domain of the system, if that is different than the parent corporate domain, to facilitate WHOIS and reverse IP lookups to establish clear ownership of the delegate system. This should be the same value as used to identify sellers in an ads.txt file if one exists.｜
+| sid | string | The identifier associated with the seller or reseller account within the advertising system. This must contain the same value used in transactions (i.e. OpenRTB bid requests) in the field specified by the SSP/exchange. Typically, in OpenRTB, this is publisher.id. For OpenDirect it is typically the publisher’s organization ID.Should be limited to 64 characters in length. |
+| rid | string | 请求id |
+| name | string | The name of the company (the legal entity) that is paid for inventory transacted under the given seller_id. This value is optional and should NOT be included if it exists in the advertising system’s sellers.json file. |
+| domain | string | The business domain name of the entity represented by this node. This value is optional and should NOT be included if it exists in the advertising system’s sellers.json file. |
+| hp | integer | Indicates whether this node will be involved in the flow of payment for the inventory. When set to 1, the advertising system in the asi field pays the seller in the sid field, who is responsible for paying the previous node in the chain. When set to 0, this node is not involved in the flow of payment for the inventory. For version 1.0 of SupplyChain, this property should always be 1. It is explicitly required to be included as it is expected that future versions of the specification will introduce non-payment handling nodes. Implementers should ensure that they support this field and propagate it onwards when constructing SupplyChain objects in bid requests sent to a downstream advertising system. |
 
 
 #### video Object
