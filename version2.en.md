@@ -137,7 +137,7 @@ Serialize format: JSON only.
 |native	|native object;native流量必传|	见 Object Native|
 |~~pmp~~ |pmp object |	私有市场交易|
 |~~displaymanager~~	|string |	媒体合作伙伴的名字，|
-|~~displaymanagerver~~	|string |	媒体合作伙伴的版本|
+|displaymanagerver	|string |	媒体合作伙伴的版本|
 |instl	|integer |	0-非插屏；1-广告为全屏或者插屏|
 |tagid	|string; required|广告位的唯一标识|
 |bidfloor|	float; required	|本次展示的cpm底价|
