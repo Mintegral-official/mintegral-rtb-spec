@@ -45,7 +45,6 @@
     "IAB26-4"
   ],
   "cur": [
-    "JPY",
     "USD"
   ],
   "device": {
@@ -213,7 +212,6 @@
     "IAB26-4"
   ],
   "cur": [
-    "JPY",
     "USD"
   ],
   "device": {
@@ -310,145 +308,141 @@
 
 ```json
 {
-  "at": 1,
-  "badv": [
-    "blocked-advertiser1.com",
-    "blocked-advertiser2.com",
-    "blocked-advertiser3.com"
-  ],
-  "bapp": [],
-  "bcat": [
-    "IAB23",
-    "IAB23-1",
-    "IAB23-10",
-    "IAB23-2",
-    "IAB23-3",
-    "IAB23-4",
-    "IAB23-5",
-    "IAB23-6",
-    "IAB23-7",
-    "IAB23-8",
-    "IAB23-9",
-    "IAB24",
-    "IAB25-2",
-    "IAB25-3",
-    "IAB25-4",
-    "IAB25-5",
-    "IAB26",
-    "IAB26-1",
-    "IAB26-2",
-    "IAB26-3",
-    "IAB26-4"
-  ],
-  "cur": [
-    "JPY",
-    "USD"
-  ],
-  "device": {
-    "connectiontype": 2,
-    "devicetype": 2,
-    "dnt": 0,
-    "geo": {
-      "city": "Shibuya",
-      "country": "JPN",
-      "ipservice": 3,
-      "region": "JP-13",
-      "type": 2,
-      "utcoffset": 540,
-      "zip": "150-0043"
-    },
-    "hwv": "",
-    "ifa": "",
-    "ip": "210.168.46.254",
-    "ipv6": "",
-    "js": 1,
-    "language": "ja",
-    "lmt": 0,
-    "make": "",
-    "model": "SOV39",
-    "os": "Android",
-    "osv": "9",
-    "pxratio": 0.0,
-    "ua": "Mozilla\/5.0 (Linux; Android 9; SOV39 Build\/52.0.C.1.119) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/68.0.3440.91 Mobile Safari\/537.36"
-  },
-  "id": "75a40036-f9d6-4f8c-8240-d37b28c2dbc7",
-  "imp": [
-    {
-      "bidfloor": 300.0,
-      "bidfloorcur": "JPY",
-      "ext": {},
-      "id": "",
-      "instl": 0,
-      "metric": [],
-      "native": {
-        "api": [],
-        "battr": [],
-        "ext": {},
-        "request": "{\"native\":{\"assets\":[{\"id\":1,\"required\":1,\"title\":{\"len\":10}},{\"id\":2,\"img\":{\"hmin\":10,\"type\":1,\"wmin\":10},\"required\":1},{\"data\":{\"len\":30,\"type\":1},\"id\":3},{\"data\":{\"len\":50,\"type\":2},\"id\":4}],\"layout\":3,\"plcmtcnt\":2,\"ver\":\"1.0\"}}",
-        "ver": "1.0"
-      },
-      "pmp": {
-        "deals": [],
-        "ext": {},
-        "private_auction": 0
-      },
-      "secure": 1,
-      "tagid": "1111:22222222"
-    }
-  ],
-  "site": {
-    "cat": [
-      "IAB1"
+    "id": "5d5e0a705779c1436f58db0x",
+    "imp": [
+        {
+            "id": "1",
+            "native": {
+                "request": "{\"ver\":\"1.1\", \"assets\":[{\"id\":7, \"required\":1, \"img\":{\"type\":3, \"w\":1200, \"h\":627}}, {\"id\":1, \"required\":1, \"img\":{\"type\":1, \"w\":300, \"h\":300}}, {\"id\":3, \"required\":1, \"title\":{\"len\":20}}, {\"id\":4, \"required\":1, \"data\":{\"type\":2}}, {\"id\":5, \"required\":1, \"data\":{\"type\":3}}, {\"id\":6, \"required\":1, \"data\":{\"type\":12}}}]}",
+                "ver": "1.1"
+            },
+            "tagid": "1510001443",
+            "bidfloor": 1,
+            "bidfloorcur": "USD",
+            "secure": true,
+            "support_download": false,
+            "request_type": 7,
+            "displaymanagerver": "mi_3.3.2",
+            "ext": {
+                "native_type": 3
+            },
+            "ext_channel": ""
+        }
     ],
-    "domain": "magazine.fluct.jp",
-    "ext": {},
-    "id": "123",
-    "mobile": 1,
-    "name": "Example Site",
-    "page": "https:\/\/magazine.fluct.jp\/category\/news",
-    "pagecat": [],
-    "publisher": {
-      "cat": [],
-      "domain": "",
-      "ext": {},
-      "id": "234",
-      "name": ""
-    },
-    "ref": "https:\/\/google.com\/search?",
-    "sectioncat": []
-  },
-  "source": {
-    "ext": {
-      "schain": {
-        "complete": 1,
-        "nodes": [
-          {
-            "asi": "adingo.jp",
-            "ext": {},
-            "hp": 1,
-            "rid": "75a40036-f9d6-4f8c-8240-d37b28c2dbc7",
-            "sid": "234"
-          }
+    "app": {
+        "id": "1510000000",
+        "cat": [
+            "IAB10",
+            "IAB22",
+            "IAB14",
+            "IAB1"
         ],
-        "ver": "1.0"
-      },
-      "stype": ""
+        "ver": "8.3.4",
+        "bundle": "ni.criteo.1",
+        "publisher": {
+            "id": "12441"
+        },
+        "storeurl": "https://itunes.apple.com/app/id925015459"
     },
-    "fd": 0,
-    "tid": "75a40036-f9d6-4f8c-8240-d37b28c2dbc7"
-  },
-  "tmax": 120,
-  "user": {
-    "buyeruid": "synced-buyeruid",
-    "ext": {},
-    "id": "2c7b94bfca27de03ce862bb6c9cb7a1e7093197d"
-  },
-  "wseat": []
+    "device": {
+        "ua": "Mozilla/5.0%20(iPhone%3B%20CPU%20iPhone%20OS%2010_2_1%20like%20Mac%20OS%20X)%20AppleWebKit/602.4.6%20(KHTML%2C%20like%20Gecko)%20Mobile/14D27%20Camera360/8.3.4",
+        "geo": {
+            "country": "SG",
+            "city": "390"
+        },
+        "dnt": false,
+        "ip": "39.109.124.93",
+        "devicetype": 4,
+        "make": "0",
+        "model": "iphone 6s",
+        "os": "ios",
+        "osv": "11.1.2",
+        "language": "",
+        "carrier": "",
+        "connectiontype": 0,
+        "ifa": "9601B92C-0A21-4FD6-B176-6AAAF241B579",
+        "didsha1": "",
+        "didmd5": "",
+        "imei": ""
+    },
+    "at": 2,
+    "tmax": 2000,
+    "bcat": [
+        "IAB26",
+        "IAB24",
+        "IAB25"
+    ]
 }
 ```
 
 ### Native (video)
 ``` json
+{
+    "id": "5d5e0a705779c1436f58db0x",
+    "imp": [
+        {
+            "id": "1",
+            "native": {
+                "request": "{\"ver\":\"1.1\", \"assets\":[{\"id\":7, \"required\":1, \"img\":{\"type\":3, \"w\":1200, \"h\":627}}, {\"id\":1, \"required\":1, \"img\":{\"type\":1, \"w\":300, \"h\":300}}, {\"id\":3, \"required\":1, \"title\":{\"len\":20}}, {\"id\":4, \"required\":1, \"data\":{\"type\":2}}, {\"id\":5, \"required\":1, \"data\":{\"type\":3}}, {\"id\":6, \"required\":1, \"data\":{\"type\":12}}, {\"id\":2, \"required\":1, \"video\":{\"mimes\":[\"video/mp4\"], \"w\":720, \"h\":1280, \"ext\":{\"orientation\":1}}}]}",
+                "ver": "1.1"
+            },
+            "tagid": "1510001443",
+            "bidfloor": 1,
+            "bidfloorcur": "USD",
+            "secure": true,
+            "support_download": false,
+            "request_type": 7,
+            "displaymanagerver": "mi_3.3.2",
+            "ext": {
+                "native_type": 3
+            },
+            "ext_channel": ""
+        }
+    ],
+    "app": {
+        "id": "1510000000",
+        "cat": [
+            "IAB10",
+            "IAB22",
+            "IAB14",
+            "IAB1"
+        ],
+        "ver": "8.3.4",
+        "bundle": "ni.criteo.1",
+        "publisher": {
+            "id": "12441"
+        },
+        "storeurl": "https://itunes.apple.com/app/id925015459"
+    },
+    "device": {
+        "ua": "Mozilla/5.0%20(iPhone%3B%20CPU%20iPhone%20OS%2010_2_1%20like%20Mac%20OS%20X)%20AppleWebKit/602.4.6%20(KHTML%2C%20like%20Gecko)%20Mobile/14D27%20Camera360/8.3.4",
+        "geo": {
+            "country": "SG",
+            "city": "390"
+        },
+        "dnt": false,
+        "ip": "39.109.124.93",
+        "devicetype": 4,
+        "make": "0",
+        "model": "iphone 6s",
+        "os": "ios",
+        "osv": "11.1.2",
+        "language": "",
+        "carrier": "",
+        "connectiontype": 0,
+        "ifa": "9601B92C-0A21-4FD6-B176-6AAAF241B579",
+        "didsha1": "",
+        "didmd5": "",
+        "imei": ""
+    },
+    "at": 2,
+    "tmax": 2000,
+    "bcat": [
+        "IAB26",
+        "IAB24",
+        "IAB25"
+    ]
+}
 ```
 
 ### Rewarded-Video
@@ -1017,4 +1011,73 @@
 
 ### Splash
 ``` json
+{
+    "id": "5d9bf80a35304353b9ddb5fx",
+    "imp": [
+        {
+            "id": "1",
+            "banner": {
+                "w": 1280,
+                "h": 720,
+                "battr": [
+                    17
+                ],
+                "mimes": [
+                    "application/javascript",
+                    "image/jpeg",
+                    "image/gif",
+                    "text/css",
+                    "text/html",
+                    "image/png"
+                ],
+                "api": [
+                    3,
+                    5,
+                    6
+                ],
+                "ext": {
+                    "orientation": 2,
+                    "adtype": 3
+                }
+            },
+            "tagid": "1510000297",
+            # 美分
+            "bidfloor": 1,
+            "bidfloorcur": "USD",
+            "secure": true,
+            "support_download": false,
+            "request_type": 7,
+            "displaymanagerver": "mal_99.0.0"
+        }
+    ],
+    "app": {
+        "id": "1510000000",
+        "ver": "5.4.0",
+        "bundle": "test.aladdin.1510000000",
+        "publisher": {
+            "id": "1500000000"
+        },
+        "storeurl": ""
+    },
+    "device": {
+        "ua": "Mozilla/5.0 (Linux; Android 7.0; SM-N9208 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36",
+        "geo": {
+            "country": "CN",
+            "city": "7391"
+        },
+        "dnt": false,
+        "ip": "112.65.61.82",
+        "devicetype": 4,
+        "make": "",
+        "model": "honor",
+        "os": "android",
+        "osv": "11.1.2",
+        "language": "zh-Hans-US",
+        "carrier": "46002",
+        "connectiontype": 2,
+        "ifa": "A0635584-FCB1-4106-B924-A80C29150E4D"
+    },
+    "at": 1,
+    "tmax": 600
+}
 ```
