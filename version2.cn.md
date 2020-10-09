@@ -384,3 +384,19 @@ Serialize format: JSON only.
 | 字段 | 类型    | 描述                                                                                                                                  |
 |----------|-------- |---------------------------------|
 | coppa    | integer | 表示该次展示是否遵从 COPPA 法案， 0-不遵从；1-遵从； 对于遵从 COPPA 法案的展示，DSP 必须保证返回的广告的内容和素材符合 COPPA 广告规定 |
+
+## 4. Response specification
+### a. Bid response parameters
+### b. impression/click beacon
+### c. Macro substitution
+### d. Click Measuring
+
+## 5. Code table
+
+## 6. Bid Request/Response Examples
+
+### Request Examples
+See [version2.req-examples.md](./version2.req-examples.md) for details.
+
+### Response Examples
+See [version2.res-examples.md](./version2.res-examples.md) for details.
