@@ -331,41 +331,47 @@ Serialize format: JSON only.
 | cat       | array of strings | 发布者的IAB内容类型数组， 参考附录Content Categories |
 | ~~domain~~    | string  | 发布者的顶级域名（例如， "publisher.com" )；         |
 
+
 #### device Object
 
-| 字段      | 类型  | 描述                                                                                                                                                              |
-|----------------|-----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ua             | string | 用户设备 HTTP 请求头中的 User-Agent 字段；                                                                                                                        |
-| geo        | geo object | 表示用户当前位置；                                                                                                                                                |
-| dnt            | integer  | 浏览器在 HTTP 头中设置的标准的“Do Not Track"标识， 0-不限制追踪；1-限制（不允许）追踪 注意，该字段值类型定义与open RTB 2.4版本协议有所不同                        |
-| lmt            | integer  | “限制广告追踪”表示用户对商业追踪行为的授权， 值为 0-不限制追踪；1-限制追踪 注意，该字段值类型定义与open RTB 2.4版本协议有所不同                                   |
-| ip             | string; required | 最接近设备的 IPv4 地址；                                                                                                                                          |
-| ~~ipv6~~           | string   | 最接近设备的 Ipv6 地址；                                                                                                                                          |
-| devicetype     | integer; required | 设备类型；枚举值参考附录Device Type                                                                                                                               |
-| make           | string; required   | 设备制造商，比如“Apple”，未知传 unknown                                                                                                                           |
+| 字段      | 类型  | 描述  |
+|----------------|-----|--------------------------|
+| ua    | string | 用户设备 HTTP 请求头中的 User-Agent 字段； |
+| geo   | geo object | 表示用户当前位置；   |
+| dnt   | integer  | 浏览器在 HTTP 头中设置的标准的“Do Not Track"标识， 0-不限制追踪；1-限制（不允许）追踪 注意，该字段值类型定义与open RTB 2.4版本协议有所不同   |
+| lmt   | integer  | “限制广告追踪”表示用户对商业追踪行为的授权， 值为 0-不限制追踪；1-限制追踪 注意，该字段值类型定义与open RTB 2.4版本协议有所不同  |
+| ip    | string; required | 最接近设备的 IPv4 地址；|
+| ~~ipv6~~ | string   | 最接近设备的 Ipv6 地址；  |
+| devicetype     | integer; required | 设备类型；枚举值参考附录Device Type  |
+| make           | string; required   | 设备制造商，比如“Apple”，未知传 unknown   |
 | model          | string; required  | 1） android 设备:调用系统接口android.os.Build.MODEL 直接获得； 2） ios 设备：对系统接口返回原始值做转换后得到，取值例如 iPhone5 、 iPhone6s 、 iPhone 6sPlus 等； |
-| os             | string; required  | 操作系统；未知传 unknown                                                                                                                                          |
-| osv            | string; required  | Os 版本；三段式或两段式版本号；                                                                                                                                   |
-| hwv            | string   | 设备硬件版本， 例如 “5S”；                                                                                                                                        |
-| h              | integer  | 屏幕的物理高度， 以像素为单位；                                                                                                                                   |
-| w              | integer  | 屏幕的物理宽度，以像素为单位；                                                                                                                                    |
-| ~~ppi~~            | integer | 以像素每英寸表示的屏幕尺寸；                                                                                                                                      |
-|~~pxratio~~        | float | 设备物理像素与设备无关像素的比率；                                                                                                                                |
-| js             | integer  | 支持javascript, 0-不支持；1-支持；                                                                                                                                |
-| ~~geofetch~~       | integer | 表示该广告位是否为JavaScript代码提供geolocaion API， 0-不提供；1-提供                                                                                             |
-| ~~flashver~~       | string  | 浏览器支持的Flash版本；                                                                                                                                           |
-| language       | string; required  | 设备语言；使用 ISO-639-1-alpha-2；未知传unknown                                                                                                                   |
-| carrier        | string; required | 运营商；字段值采用 MCC 和 MNC 结合的代码， 如46001 表示中国联通；未知传 unknown；                                                                                 |
-| ~~mccmnc~~         | string   | 运营商mcc-mnc代码；                                                                                                                                               |
-| connectiontype | integer;required | 网络连接类型；枚举值参考附录Connection Type                                                                                                                       |
-| ifa            | string  | 广告主标识， 明文表示； Ios 传 idfa，必传； Android 国外传 gaid，国内不传；                                                                                       |
-| imei           | string | 硬件设备 ID，安卓传 IMEI                                                                                                                                          |
-| android_id     | string  | 设备平台 ID，安卓传 Android ID                                                                                                                                    |
-| oaid     | string  | OAID                                                                                                                                   |
-| didsha1        | string  | 硬件设备 ID，安卓传 IMEI，使用 SHA1 哈希算法；                                                                                                                    |
-| didmd5         | string  | 硬件设备 ID，安卓传 IMEI，使用 md5 哈希算法；                                                                                                                     |
-| dpidsha1       | string | 设备平台 ID，安卓传 Android ID，使用 SHA1 哈希算法；                                                                                                              |
-| dpidmd5        | string | 设备平台 ID，安卓传 Android ID，使用 md5 哈希算法；                                                                                                               |
+| os             | string; required  | 操作系统；未知传 unknown   |
+| osv            | string; required  | Os 版本；三段式或两段式版本号； |
+| hwv            | string   | 设备硬件版本， 例如 “5S”； |
+| h              | integer  | 屏幕的物理高度， 以像素为单位； |
+| w              | integer  | 屏幕的物理宽度，以像素为单位； |
+| ~~ppi~~        | integer | 以像素每英寸表示的屏幕尺寸； |
+|~~pxratio~~        | float | 设备物理像素与设备无关像素的比率； |
+| js             | integer  | 支持javascript, 0-不支持；1-支持；  |
+| ~~geofetch~~       | integer | 表示该广告位是否为JavaScript代码提供geolocaion API， 0-不提供；1-提供       |
+| ~~flashver~~       | string  | 浏览器支持的Flash版本； |
+| language       | string; required  | 设备语言；使用 ISO-639-1-alpha-2；未知传unknown  |
+| carrier  | string; required | 运营商；字段值采用 MCC 和 MNC 结合的代码， 如46001 表示中国联通；未知传 unknown；   |
+| ~~mccmnc~~         | string   | 运营商mcc-mnc代码； |
+| connectiontype | integer;required | 网络连接类型；枚举值参考附录Connection Type |
+| ifa            | string  | 广告主标识， 明文表示； Ios 传 idfa，必传； Android 国外传 gaid，国内不传；   |
+| imei           | string | 硬件设备 ID，安卓传 IMEI  |
+| android_id     | string  | 设备平台 ID，安卓传 Android ID  |
+| didsha1        | string  | 硬件设备 ID，安卓传 IMEI，使用 SHA1 哈希算法； |
+| didmd5         | string  | 硬件设备 ID，安卓传 IMEI，使用 md5 哈希算法；   |
+| dpidsha1       | string | 设备平台 ID，安卓传 Android ID，使用 SHA1 哈希算法； |
+| dpidmd5        | string | 设备平台 ID，安卓传 Android ID，使用 md5 哈希算法；  |
+| ext            | device-ext object | device 扩展字段 ｜
+
+#### device-ext Object
+| 字段 | 类型    | 描述       |
+|----------|-------- |---------------------------|
+| oaid    | string | oaid  |
 
 #### geo Object
 
