@@ -1041,7 +1041,6 @@
                 }
             },
             "tagid": "1510000297",
-            # 美分
             "bidfloor": 1,
             "bidfloorcur": "USD",
             "secure": true,
