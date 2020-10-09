@@ -453,14 +453,566 @@
 
 ### Rewarded-Video
 ``` json
+{
+	"id": "916ac896-4028-4564-a73b-e2c6ac86187f",
+	"app": {
+		"id": "115263",
+		"name": "采矿大亨：掘金之旅 (Idle Miner Tycoon)",
+		"cat": [
+			"IAB1"
+		],
+		"ver": "3.16.1",
+		"bundle": "1116645064",
+		"publisher": {
+			"id": "17702"
+		},
+		"storeurl": "https://apps.apple.com/us/app/idle-miner-tycoon/id1116645064?mt=8",
+		"storeid": "com.fluffyfairygames.idleminertycoon"
+	},
+	"at": 2,
+	"tmax": 600,
+	"bcat": [
+		"IAB26",
+		"IAB24",
+		"IAB25",
+		"IAB11-4"
+	],
+	"source": {
+		"ext": {
+			"schain": {
+				"ver": "1.0",
+				"complete": 1,
+				"nodes": [{
+					"asi": "mintegral.com",
+					"sid": "17702",
+					"rid": "916ac896-4028-4564-a73b-e2c6ac86187f",
+					"hp": 1
+				}]
+			}
+		}
+	},
+	"imp": [{
+		"id": "1",
+		"video": {
+			"mimes": [
+				"video/mp4"
+			],
+			"maxduration": 30,
+			"protocols": [
+				2,
+				3,
+				5,
+				6
+			],
+			"w": 720,
+			"h": 1280,
+			"linearity": 1,
+			"skip": 0,
+			"battr": [
+				16
+			],
+			"maxbitrate": 2000,
+			"delivery": [
+				2
+			],
+			"pos": 7,
+			"companionad": [{
+				"w": 720,
+				"h": 1280,
+				"id": "1",
+				"battr": [
+					16
+				],
+				"pos": 7,
+				"mimes": [
+					"application/javascript",
+					"image/jpeg",
+					"image/jpg",
+					"text/html",
+					"image/png",
+					"text/css",
+					"image/gif"
+				],
+				"api": [
+					3,
+					5,
+					6
+				],
+				"ext": {
+					"orientation": 1,
+					"is_rewarded": true
+				}
+			}],
+			"api": [
+				3,
+				5,
+				6
+			],
+			"companiontype": [
+				1,
+				2,
+				3
+			],
+			"ext": {
+				"orientation": 1,
+				"videotype": 1,
+				"videotemplate": [{
+						"id": 1,
+						"name": "middle_black_screen",
+						"videow": 720,
+						"videoh": 1280,
+						"videoorientation": 1
+					},
+					{
+						"id": 2,
+						"name": "middle_fur_screen",
+						"videow": 720,
+						"videoh": 1280,
+						"videoorientation": 1
+					},
+					{
+						"id": 6,
+						"name": "stretch_screen",
+						"videow": 720,
+						"videoh": 1280,
+						"videoorientation": 1
+					},
+					{
+						"id": 3,
+						"name": "above_video",
+						"videoorientation": 2
+					},
+					{
+						"id": 4,
+						"name": "storekit_video",
+						"videoorientation": 2
+					},
+					{
+						"id": 5,
+						"name": "image_video",
+						"videoorientation": 2
+					}
+				],
+				"videoendtype": [
+					1,
+					2
+				],
+				"endcardonly": true,
+				"is_rewarded": true
+			}
+		},
+		"tagid": "211967",
+		"bidfloorcur": "USD",
+		"displaymanagerver": "mi_6.3.3",
+		"ext": {},
+		"instl": 1,
+		"secure": 1,
+		"bidfloor": 3
+	}],
+	"device": {
+		"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+		"ip": "112.146.94.2",
+		"devicetype": 4,
+		"make": "apple",
+		"model": "iphone 7 plus",
+		"os": "ios",
+		"osv": "14.0.1",
+		"carrier": "45008",
+		"connectiontype": 2,
+		"ifa": "00000000-0000-0000-0000-000000000000",
+		"didmd5": "",
+		"dpidmd5": "",
+		"geo": {
+			"city": "namchang-dong",
+			"country": "KOR"
+		},
+		"dnt": 0,
+		"lmt": 0,
+		"language": "ko"
+	},
+	"regs": {
+		"coppa": 0,
+		"ext": {
+			"gdpr": 0
+		}
+	}
+}
 ```
 
 ### Interstitial-Video
 ``` json
+{
+	"id": "9148c67b-ff15-4be3-aaf1-6417b206be39",
+	"app": {
+		"id": "130199",
+		"name": "AMAZE!!!",
+		"cat": [
+			"IAB1"
+		],
+		"ver": "2.9.5",
+		"bundle": "1452526406",
+		"publisher": {
+			"id": "18837"
+		},
+		"storeurl": "https://apps.apple.com/us/app/amaze/id1452526406",
+		"storeid": "com.amaze.game"
+	},
+	"at": 2,
+	"tmax": 600,
+	"bcat": [
+		"IAB26",
+		"IAB14-1",
+		"IAB1",
+		"IAB24",
+		"IAB25",
+		"IAB11-4"
+	],
+	"bapp": [
+		"id1411754473",
+		"id1448852425",
+		"id1077137248",
+		"id1374403536",
+		"id1041545937",
+		"id1139379843",
+		"id1370346970",
+		"id1089836344",
+		"id1424349196",
+		"id970417047",
+		"id1328359160",
+		"id1403848965",
+		"id969316884",
+		"id524731580",
+		"id741183306",
+		"id1182341536",
+		"id1447322621",
+		"id529652920",
+		"id1438385422",
+		"id558207346",
+		"id1277029359",
+		"com.candywriter.bitlife",
+		"com.sail.advanced.booster",
+		"com.randomsaladgames.ginrummydeluxe",
+		"com.aim.ginrummy",
+		"ca.lbcstudios.hempire",
+		"com.tutapp.idlezombies",
+		"com.cmcm.live",
+		"com.admarket.passionpuzzle",
+		"com.neonplay.casualrollersplat2",
+		"com.joinroot.root",
+		"com.nextgames.android.twd",
+		"com.nextgames.android.ourworld",
+		"com.scopely.headshot",
+		"com.telltalegames.walkingdead100",
+		"com.telltalegames.walkingdead200",
+		"veeu.watch.funny.video.vlog.moment",
+		"com.fiogonia.yatzy",
+		"com.noodlecake.zombieroadtrip",
+		"net.mobigame.zombietsunami",
+		"jp.co.cybird.appli.android.sgk",
+		"com.vng.android.mps.dead.zombie2",
+		"com.mars.avgchapters",
+		"id1411754473",
+		"id1448852425",
+		"id1077137248",
+		"id1374403536",
+		"id1041545937",
+		"id1139379843",
+		"id1370346970",
+		"id1089836344",
+		"id1424349196",
+		"id970417047",
+		"id1328359160",
+		"id1403848965",
+		"id969316884",
+		"id524731580",
+		"id741183306",
+		"id1182341536",
+		"id1447322621",
+		"id529652920",
+		"id1438385422",
+		"id558207346",
+		"id1277029359",
+		"com.candywriter.bitlife",
+		"com.sail.advanced.booster",
+		"com.randomsaladgames.ginrummydeluxe",
+		"com.aim.ginrummy",
+		"ca.lbcstudios.hempire",
+		"com.tutapp.idlezombies",
+		"com.cmcm.live",
+		"com.admarket.passionpuzzle",
+		"com.neonplay.casualrollersplat2",
+		"com.joinroot.root",
+		"com.nextgames.android.twd",
+		"com.nextgames.android.ourworld",
+		"com.scopely.headshot",
+		"com.telltalegames.walkingdead100",
+		"com.telltalegames.walkingdead200",
+		"veeu.watch.funny.video.vlog.moment",
+		"com.fiogonia.yatzy",
+		"com.noodlecake.zombieroadtrip",
+		"net.mobigame.zombietsunami",
+		"jp.co.cybird.appli.android.sgk",
+		"com.vng.android.mps.dead.zombie2",
+		"com.mars.avgchapters"
+	],
+	"source": {
+		"ext": {
+			"schain": {
+				"ver": "1.0",
+				"complete": 1,
+				"nodes": [{
+					"asi": "mintegral.com",
+					"sid": "18837",
+					"rid": "9148c67b-ff15-4be3-aaf1-6417b206be39",
+					"hp": 1
+				}]
+			}
+		}
+	},
+	"imp": [{
+		"id": "1",
+		"video": {
+			"mimes": [
+				"video/mp4"
+			],
+			"maxduration": 30,
+			"protocols": [
+				2,
+				3,
+				5,
+				6
+			],
+			"w": 720,
+			"h": 1280,
+			"linearity": 1,
+			"skip": 1,
+			"maxbitrate": 2000,
+			"delivery": [
+				2
+			],
+			"pos": 7,
+			"companionad": [{
+				"w": 720,
+				"h": 1280,
+				"id": "1",
+				"battr": [
+					16
+				],
+				"pos": 7,
+				"mimes": [
+					"application/javascript",
+					"image/jpeg",
+					"image/jpg",
+					"text/html",
+					"image/png",
+					"text/css",
+					"image/gif"
+				],
+				"api": [
+					3,
+					5,
+					6
+				],
+				"ext": {
+					"orientation": 2
+				}
+			}],
+			"api": [
+				3,
+				5,
+				6
+			],
+			"companiontype": [
+				1,
+				2,
+				3
+			],
+			"ext": {
+				"orientation": 1,
+				"videotype": 2,
+				"videotemplate": [{
+						"id": 1,
+						"name": "middle_black_screen",
+						"videow": 720,
+						"videoh": 1280,
+						"videoorientation": 1
+					},
+					{
+						"id": 2,
+						"name": "middle_fur_screen",
+						"videow": 720,
+						"videoh": 1280,
+						"videoorientation": 1
+					},
+					{
+						"id": 6,
+						"name": "stretch_screen",
+						"videow": 720,
+						"videoh": 1280,
+						"videoorientation": 1
+					},
+					{
+						"id": 3,
+						"name": "above_video",
+						"videoorientation": 2
+					},
+					{
+						"id": 4,
+						"name": "storekit_video",
+						"videoorientation": 2
+					},
+					{
+						"id": 5,
+						"name": "image_video",
+						"videoorientation": 2
+					}
+				],
+				"videoendtype": [
+					1,
+					2
+				],
+				"endcardonly": true
+			}
+		},
+		"tagid": "270606",
+		"bidfloorcur": "USD",
+		"displaymanagerver": "mi_6.2.0",
+		"ext": {},
+		"instl": 1,
+		"secure": 1,
+		"bidfloor": 3
+	}],
+	"device": {
+		"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+		"ip": "180.211.19.226",
+		"devicetype": 4,
+		"make": "apple",
+		"model": "iphone xs",
+		"os": "ios",
+		"osv": "14.0.1",
+		"carrier": "45005",
+		"connectiontype": 2,
+		"ifa": "00000000-0000-0000-0000-000000000000",
+		"didmd5": "",
+		"dpidmd5": "",
+		"geo": {
+			"city": "dal-dong",
+			"country": "KOR"
+		},
+		"dnt": 0,
+		"lmt": 0,
+		"language": "ko"
+	},
+	"regs": {
+		"coppa": 0,
+		"ext": {
+			"gdpr": 0
+		}
+	}
+}
 ```
 
 ### Banner
 ``` json
+{
+	"id": "2853cfd1-b043-4476-bfd3-f725ab2309df",
+	"app": {
+		"id": "120098",
+		"name": "斗地主经典版-单机游戏",
+		"cat": [
+			"IAB9-7"
+		],
+		"ver": "1.9",
+		"bundle": "1102002812",
+		"publisher": {
+			"id": "19316"
+		},
+		"storeurl": "https://apps.apple.com/cn/app/id1102002812?mt=8",
+		"storeid": "com.zongyi.ndoudizhu"
+	},
+	"at": 2,
+	"tmax": 600,
+	"bcat": [
+		"IAB26",
+		"IAB24",
+		"IAB25",
+		"IAB11-4"
+	],
+	"source": {
+		"ext": {
+			"schain": {
+				"ver": "1.0",
+				"complete": 1,
+				"nodes": [{
+					"asi": "mintegral.com",
+					"sid": "19316",
+					"rid": "2853cfd1-b043-4476-bfd3-f725ab2309df",
+					"hp": 1
+				}]
+			}
+		}
+	},
+	"imp": [{
+		"id": "1",
+		"banner": {
+			"w": 320,
+			"h": 50,
+			"battr": [
+				17
+			],
+			"mimes": [
+				"application/javascript",
+				"image/jpeg",
+				"image/jpg",
+				"text/html",
+				"image/png",
+				"text/css"
+			],
+			"api": [
+				3,
+				5,
+				6
+			],
+			"ext": {
+				"orientation": 0,
+				"adtype": 1
+			}
+		},
+		"tagid": "159637",
+		"bidfloorcur": "USD",
+		"displaymanagerver": "mi_5.8.3",
+		"ext": {},
+		"secure": 1,
+		"bidfloor": 0.15
+	}],
+	"device": {
+		"ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+		"ip": "117.136.79.94",
+		"devicetype": 4,
+		"make": "apple",
+		"model": "iphone 6",
+		"os": "ios",
+		"osv": "12.4.1",
+		"carrier": "46000",
+		"connectiontype": 6,
+		"ifa": "BC5EA04D-F3F9-470F-A1FA-885314C946E5",
+		"didmd5": "",
+		"dpidmd5": "",
+		"geo": {
+			"city": "shenzhen",
+			"country": "CHN"
+		},
+		"dnt": 0,
+		"lmt": 0,
+		"language": "zh"
+	},
+	"regs": {
+		"coppa": 0,
+		"ext": {
+			"gdpr": 0
+		}
+	}
+}
 ```
 
 ### Splash
