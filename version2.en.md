@@ -115,7 +115,7 @@ Serialize format: JSON only.
  | ~~wseat~~|  array of strings|    买方席位白名单|
  | ~~bseat~~|  array of strings|    买方席位黑名单|
  | ~~allimps~~|   integer  |     本次展示机会是否覆盖上下文所有广告展示机会|
- | ~~cur~~    | array of strings|   返回允许的货币类型|
+ | cur    | array of strings|   返回允许的货币类型,默认为美元|
  | ~~wlang~~  | array of strings|   素材语言白名单|
  | bcat    | array of strings   | 广告主IAB category黑名单|
  | badv    | array of strings   |    广告主域名黑名单|
@@ -136,7 +136,7 @@ Serialize format: JSON only.
 |~~audio~~	|audio object;audio流量必传|	见 Object Audio|
 |native	|native object;native流量必传|	见 Object Native|
 |~~pmp~~ |pmp object |	私有市场交易|
-|~~displaymanager~~	|string |	媒体合作伙伴的名字，|
+|displaymanager	|string |	媒体合作伙伴的名字|
 |displaymanagerver	|string |	媒体合作伙伴的版本|
 |instl	|integer |	0-非插屏；1-广告为全屏或者插屏|
 |tagid	|string; required|广告位的唯一标识|
@@ -163,6 +163,11 @@ Serialize format: JSON only.
 |~~expdir~~|	array of integer|	banner可以扩展的方向，参考表附录Expandable Direction|
 |api| array of integer |	该次展示可支持的 API 框架；枚举值释义参考附录API Frameworks；该字段缺省表示所有枚举值均不支持|
 |~~vcm~~|	integer	|	当banner object作为video objecthttp://dev.mintegral.com/doc/adx/cn/#frc12_1的伴随广告时，标识伴随广告的渲染模式；0-concurrent, 1-endcard|
+
+#### banner ext Object
+| 字段	| 类型 	| 描述 |
+| ---|---|---|
+| adtype | int | 枚举： 1:banner; 2:interactive ad; 3:splash; 4:interstitial|
 
 #### format Object
 
@@ -451,6 +456,15 @@ HTTP 204 No Content 表示不bid
 | hratio  | integer   | 广告的相对高度，单位：像素。  |
 | exp     | integer   | 广告从返回到实际展示的有效延迟时间，单位为秒；默认值为 3600；     |
 | ext     | bid-ext object          | 具体见 ext object  |
+
+#### bid ext object
+| 参数名称       | 类型   | 描述                         |
+|----------------|--------------|-------------------------------------------------------|
+| imptrackers | array of strings | 展示监测链接 |
+| clicktrackers | array of strings | 点击监测链接 |
+| click_url | string | 点击链接，落地页 | 
+| deeplink | string | deeplink 链接 |
+| deeplinkfallbackurl | string | deeplink 失败时的上报链接 |
 
 ### b. impression/click beacon
 DSP在bidresponse中向Mintegral ADX返回nurl和展示监测链接（其中，展示监测链接可选，DSP可不返回）。
