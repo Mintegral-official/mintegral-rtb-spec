@@ -7,6 +7,10 @@ import (
 	"encoding/hex"
 	"fmt"
 )
+/*
+	本代码仅作为demo使用
+	在线上代码中， key将会支持可配置， 所有 err 也都会被正确处理
+ */
 var key = "0123456789ABCDEF0123456789ABCDEF" // 32 bit hex
 var nonceStr = "000000000000000000000000"  // hex decode的结果是一个12位的[]byte,
 func AESGCMEncode(plaintext, key string) string {
