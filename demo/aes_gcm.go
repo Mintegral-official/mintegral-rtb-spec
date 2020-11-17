@@ -62,5 +62,18 @@ func main() {
 		fmt.Printf("AESGCM decode result: %s, length:%d \n", raw, len(raw))
 	}
 	fmt.Println("result should be true:", raw == price)
+
+
+	/*如下是某次执行的console print， 供参考
+	AESGCM encoding...
+	workkey:z2n31d6lo2Pdfe4J/a9ClA==, bytes:[207 105 247 213 222 165 163 99 221 125 238 9 253 175 66 148], length:16
+	rand iv: [122 232 163 28 122 195 138 104 51 94 142 173], length: 12
+	ciphertext before base64:[122 232 163 28 122 195 138 104 51 94 142 173 223 87 207 65 157 240 213 215 8 232 126 253 207 171 106 166 90 146 104 27 201 33], length 34
+	AESGCM Decoding...  cipher:euijHHrDimgzXo6t31fPQZ3w1dcI6H79z6tqplqSaBvJIQ==, withqkey:z2n31d6lo2Pdfe4J/a9ClA==
+	nonce: [122 232 163 28 122 195 138 104 51 94 142 173], length 12
+	cipher: [223 87 207 65 157 240 213 215 8 232 126 253 207 171 106 166 90 146 104 27 201 33], length 22
+	AESGCM decode result: 111111, length:6
+	result should be true: true
+	 */
 }
 
