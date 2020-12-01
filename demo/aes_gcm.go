@@ -53,7 +53,7 @@ func generateRandKey() string {
 
 func main() {
 	workKey := generateRandKey()
-	price := "111111"
+	price := "0"
 	ret := AESGCMEncode(price, workKey)
 	raw,err := AESGCMDecode(ret, workKey)
 	if err != nil {

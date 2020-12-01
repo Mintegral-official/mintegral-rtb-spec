@@ -145,6 +145,12 @@ Serialize format: JSON only.
 |secure | integer; required|	标识展示请求是否需要使用HTTPS，默认0, 0-标识不需要使用安全链路； 1-标识需要使用安全链路|
 |~~iframebuster~~|array of strings |特定交易支持的iframe buster的名字数组|
 |~~exp~~|	integer|	建议广告展示有效时间窗口|
+|ext	|object|	否|	见Object：ext(imp)|
+
+## Object:Ext(imp)
+| Attribute	| Type |	Required	| Description |
+|---|---|---|---|
+|deeplink | int | No | 请求是否支持deeplink |
 
 
 #### banner Object
