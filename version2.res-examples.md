@@ -103,6 +103,137 @@
 	"bidid": "41d3757287c244dc9abab0f368b2d8c0"
 }
 ```
+### vast
+```xml
+<VAST version="2.0">
+    <Ad>
+        <InLine>
+            <AdSystem>
+                <![CDATA[Bytedance]]>
+            </AdSystem>
+            <AdTitle>
+                <![CDATA[초아가 초아하는 엘리먼트9,태권브이와 함께 출격하라!]]>
+            </AdTitle>
+            <Impression>
+                <![CDATA[https://impression.appsflyer.com/id1484304301?af_siteid=900000000&af_channel=Pangle&c=ULU_Element9_IOS_branding_TRAFFIC&af_c_id=1679169482449970&af_adset=Ad+Group20200929191919&af_adset_id=1679169482450946&af_ad=YZDL_video2_DJW_200925_720x720_Z_1.mp4_002&af_ad_id=1679169502146577&af_ad_type=50&pid=bytedanceglobal_int&af_viewthrough_lookback=1d&clickid=CILQk-Sh5v0CEJHgxe2h5v0CGNDKr6S634IFINDKr6S634IFKAAwDji10dzCA0IlMmM0ZTFkZDMxNjY5NDhlZmE2NmMxMWQ4MGQ0M2YzMGN1ODE4MEiA0pOtA1AAWAFgAw==&advertising_id=&idfa=00000000-0000-0000-0000-000000000000&os=1&af_ip=180.211.19.226&af_ua=Mozilla%2F5.0+%28iPhone%3B+CPU+iPhone+OS+14_0_1+like+Mac+OS+X%29+AppleWebKit%2F605.1.15+%28KHTML%2C+like+Gecko%29+Mobile%2F15E148&af_lang=&redirect=false]]>
+            </Impression>
+            <Impression>
+                <![CDATA[https://rtbtrack-sg.rtblab.net/imp?p=241&d=80&t=viNIX9l3L8YnuljvAU6XXU66lr2mMYQngoaRD3V8MZY9Zrf2FK5pZnnOW2V8tkMtA8m8TtgIcvV216SEuY13fQiCQ58YN4NcD0MvHkOkjNSiUjf85PYwY-ix8TdEpSZ9Eo68F3KNsNwoCZVs9YOiD7n6ciYsPB9Ig2akxVq8xhZkr8SXuCE2N2tmOjEUtBkjhoFGg-M6g9w_y4ZqdopWX6oUu7JQ_Rf-CRJjF_qu3JY4PUogQa6tKHyTFOfgp90gIz9o05GiEAexdN745N2YbtJ4POaPBv4l9zbFT9DCdxVb69K_lvtY1ntad94k0pGuMOmZl3lTHd8Hyd_IodGOhlRrSykecrWWbtkopoM-lA3LEXDu5kpfW6sb81leW21pnDX4jZuYjs5gbo9i6Pku_g&ns=l84an9h49lG1MtsHPlulbrwptsvHvoSsq2Va6k9EyuAnVAiDCuN-f-BF57BfUqNFJxfTSflyV5pSwe5zBs_dpfoEdeGJnaSxwsLNbhsiBlY5mvJz3Gimo2X5Lob7c49TT0bIZnpaITZEcmJWXlXMIn9MMq0mdvNC2j12ZPxDpVWagxhTpyW16BENX9mIXNlkx4Lk6sQ8L2LdD_b6u4Yk9F-49jmjMIvgwr1aSIPPC3lrdAxz2vjiy-cOVtPp6E6--T6TqohgiyrfHSrgJY-PY86Ybh-TILN5cnfFsRUrTFYw1WUn_p4s-Z2rFhUHqZpXLv8rGwGqTxBbfen-BYKrQneSMRDYmWZDpoY5W4P7aAHlfA_C_ObPNqyr5ia8KR_RvFw4yUD7aXdVcmlFi8v5doDboP_6R5udKvi-8udv4Agv8Tht9uMr3s_6nLzKhBbh47KNYIoLDZEK1vtYTXVcC0tanxOdRwyWbs7t6_bKSXMX_hRWulv4RQFHWvYW-ol91p1Gs12iW1P96hhsT2QOhSMHsC60ts0j5zRwmZ4Ko4syNzDoD7NYH-pS7vIpjyGi6I3R2w2RbBn0Hb0jDJqEvO8sp2nLVwG4SEdNdrpxgDJNui8i44USbsg-Snpqt09ytAgdxT1iHl3Mb7Q6IDhOKlGQBX3NCsVgBSceJF8LeVusaf40gHPPdl4QSamwHTXxsWhcMId1likepgJQAU6xMihuPaPThOWwFqoDT2mI0DDZQf82TfhZXNknM9JGG05dHhJJ2LWHYWRyods3Zs29Tr9FaXIaiOvIvaMHnzkpGzcbok9LQZlTSBnGZuSlMcTWqFbx5emx5d5fUdGpigZPvq4X4dIgmGwS1xOp0IIFUAclT3Rp3U_ZzY-gZc5OqNIk0rka11VYgQUunWvUJO-MxGclz81oRC1Dupn9lf9l1Ab_OGQdVFhzzqXOFPBK9YEY14uPEAx2NwnFDPYy90tq8LFdnlq3VWxRM6AO4E2BYuf0ehdxKZn6cR5VDZxSlXzng6M3JBuA329Pt06UOxSPolaPZm1JAEom245M3RvasVrBkw4TOsnF1l8fYXnm3dql_APFhyXU3NpYO1tbAlBY6O8R_V_0Xh3U0q0tRXqZpHV3u3wHYSHGEy0-afNs-Nxp5rc8XKe7oNKvqVAuUHg93U70VLY2TWRc6ppvU67A2Sy-uswM9bvwcLta_nn1Rb9wY_OSn2r6OgNKXiY03BBpV7-zd_xnwmlwgsQYDQtUCChxtZQGeZ2H1obPf0dka3BQk3hkF6iRx_cTuR2IGVHyrDeM6yBScMkbMdy6K88XeWjQrtbfUly6nY4kK6q5rOpeNbU7t_BObXmbU7Gcx3pCAXgUgCJOnZh6Pkpi01zfLouJQPT0u4_U44GdTAUIIa2OSJbn_9g-u1O2bYcOI__qDr6jhe2zgEWkIvwmRQQXcqftZhH8u3yhvg08mjyapD4VYTnIPEQwEKmhO-7vksHYP191SFd8uuS9GSUE_qIriLOcSaEWk4nBiQaV8MkPwlb-I9O53rhhk4YqEiL1jpH3SdRconuCOc7lZ-MLZwSUq8hq6hbCFeidCX0Yban7zCU02wU0nvNMBeBSB-AwviT7GY6EeK65BR-RK1I6xnL5mbFEvvJX5kIzuSKi715cIOnkhV19W3x-N-nHcYIUeT5wubonO4w2cgM9OmQvJHPCTG5P4Qm6dg_8mBxbTkfISApjZqu8IET0HIoDDufhOtJ9NNrGiQ0O6ufNArMXaDDwSllgqmfzjqWPkcf6KFydPo-B6NnqmIdXY-kYp3HSWZKnnaNs2EWEp1QBTOr6X7pJwK7kUInfcov9ix6YyUV3MMxDVui9CfnSmhumvx6cgpIv0PDkTFrfzszGOBXRuQb1hdyRmNd4lmLL_3uZO5R5SwTS8UX97igQhLjwxCrcK0MXQWR32GbmHoah2HWt0PI2zUfIcsu8NNoGEdgJixFsJnshPj5JjJ1V4Td3xKuUYgDEA-kMzbUYBGU6nQws8N0ydEm59AyaZLlSCCrGadrgkVgdcPiTaPHDvTK2S3Us5xDYAcfusLV2ocynB_6jrpvW8E4uuxBeONhSS8rDYwzIJfExY--Wbq7nOBg_zyHY401Im8U1uWKfXRhYzyuIqgKh8YVPA4_itZb8Nu1NrBDbeqYyg9NwKVMCYIP4kYIbWDPkCqnElrwhypz6RU9lDtO1gzW6ImBPMTuOij9YzazOM18PRam-4Acj5ZJcymJmgCPdWdutZ4Qcie3m0c5bvcNLTwS73ZWA6vho16iP0C7S0NC-wpddWyHHm4LlHXo2l5A-oBH45Sj_1MI8oLvaxMfwh5pKhay8ZS_IwjKelis6dApB2XxiXfi7T5Uej62zOXzMPo9IzvBkaWhbfYbApet6c57GzW2BC8YcPq1u3ndEZhYRzQuV4lmzC5_fAIzmRWaW-XwGQADyt_XLL3bfYiya0v_kmz6-F-A63cdq0ve2mAUryaGRka4pgW4IqYYJMm1_y_zkSKNaaSuYqFylmQVpaXzmoazN7u5rXvKhwzibvUhd3ELhC2O3IjLW1kI5Kp9dV2E5_Hlk3orEjAYVVOEX03BDg4OUYY19sc7tcpsKFj1rKWY6NJ8nQx1BSwg1LQOasBqCthQvPSB4q53sM7Xt-_XxDa9D966ONDPhdTHDF0WQ0DKDh0_Ob-jtU3nB-Yc5VJuvNl3NNAzE6N67C11FIsKuDzwvpLOhumFDituSntAn5IIxnOJgmDYNTYvTaDaIE14z7n-wl9EweM2pH-uXjRdQHaBK0tykV2sl9mYJQl4nQvOdNGT_AKDzYlCz_2D8XqmCPafShVz5bg32YH3Y-gTZ64zPI6-Q6G32AJbNVbzaygBif9AGHbz-u9I1m7qJwg1XbNuvl98FlmV0NMCWZxtW20GJGlQekTIArnW51FRTEpL0w0k6yMaeT0J0fk4rMoWHjFQoSTX1X64uj7s_kZ4eTV-IrRyMeS-W2A4MtDXVVCr9_3qgY43tTEvF79JV_zT0PdLk1_wE2XkjdzN37cQRx_53jpkjE9m8IuR8wAn-&bs=l84an9h49lG1MtsHPlulbrwptsvHvoSsq2Va6k9EyuDWc3vuy2eNFU8TNgSitfShHPFRc09j-nLeyptp4tptNflUAZDeTAcY6LcgBP8x1IhcRscRXSFMNqnfguyRSxmKKn6RPzEkPhdpm7ehZWIAVKNYC1-LSZYlvJDib8Jv7QzXQpIr32xkeVHFlDJwR4DwDpOBxudCXnKQQn8NY6cmsV56cu3YVxXbncfuW28JJmseBvRRISrEfe5AphtgLmaXuaKAIecSvWIvV7zxCx-uZ-QaSs-P6ZDwM9_iGpbgam76Si7V9yemCgwop74TC6D2pbDpqxogTz3zYW2DsdsbZPhUahSQVpqI3aj7EeUaGWhkZRegBkTN7TyM72G-qqCUCin3YslV2tqiTb81hsxV4yFeAo7GhYLCt1SiuFhYKude6lCbHdpXG57eO__ltX-jw3gnYO-QSlDz3cqG0KLJES000WP_cpzPOXlSn9HjmtzCyx7vCIt0R5ozUu4jR2byMr4ErTek6nbbM7vI1MNg_AYXtcC0gZJCkGkrnH0lybmcAifvn-1j1z_iWz-Y6RR6V3VlIJE95B-84H8pGEYXSVV0AK69xGBAA2G2NsDL3XA-cJN_CvsUud-8vOnLeiaA1CvuIZsrwVbAWPbHc9LHZ28vFtjOWvl5EwqGOJwMC4YOipzv5bnq1T8IM6UCJWaZKFo6Sv10Q8qmrUVbblUd6defHfZJDbZrUVETjB3u8aptsbQQCjQOTRc9b-0c3Xx052BcMXE85CRtfzKd-4bdOSeqNSExac8OjZD5IIooemZxekUpgA6WOzWr_28ZLH5ytNv8j3J7y-MuFdnxh1_I-wY7eh0FBDbXbce-t4cOuIoxdomzheJrpflswwwHSTFNr0CF4_ggFoLoo0joKcxQ5l7BY_HEsab0kn_onyEXmkUXHJObr9XzPbXeZCYhufkr7KYcrUC6jk7NxI_uIa_DkWhMUDSI2XXAlJK2PpwFupq3CwPaB9pvM6m2efQ7AKWcoCb9Z_4MI0aNJofB3xP9VxwZn_LuhLEcX3bd0PvfM5Jv3E5qKSa9iH4Baca_GaXzIJwLPlOSFCXT7trHLOW7BExX1zOp7mV1wiyOhORSUz6WT0uI0-HV6UgTX1wSISyDXoXWlp4mckajqcCiPrbfHkDNiOfQG-fLnyJDMUKzX4KHMb9GHuHPqbdbEvDI6yTqmE0ZpPMedSQJNKeVuk-ru0Ihg6FGiDvcNnsROYf1Zk6RNN0xPYj3cSpN0YeV8DWfcqA_QBz5_xWkoEjbEee_cVm505y8BUpB20tomh8J-KKPuXlE8qkRAmsIaVVOfL8YhoSKTK4nsZy3bUd7a8zTE29IJNp8Un3na63Dc4Uhsk9s5ZvSU6VnOrO3hcTyIrQpjRu1A6zxom3z4F21Pv5Ip7tagAx-_5RG-jXskIRVmnH1kodyEWHCFp4J7y9-TAgN1oRC9lwygZruFQCcxrV-IW8q1ipT6MW_B1qBQOUdNqeZCdc5IGBuaXu6q8Q7sz_t6ZBvAEurszA2200B51-R6ETtGME0Dg59TNflSuCf_qNvKQ8spm3Z7LYR0f1gK2-5-w3HT-7QUSPq_YNrsaPtgqAUUlGieFbHeKgHxVNHnkV1m5SXQpybKAr4fY0cl8rIdF1RDhzXIrgNQdAFnbcE2j4QxdnGS0bwPbTjbxeMcYDSh534ThvlfRrSywx2Qr5a2v_OlHc9VRMd_Cv3l8FmqvI5Ks66O-YBhMUy8ARgqy6UiLZbZh7gZbsBHI2wGH-e4sSaaNnPqqXIYr6gZ4L6K3RX_X4JAGgQR6ij3j5ZY9_ZJ4M0x27alqwwTqIspR5WpUN4KyeqcMVbuSGUwOcIdE7xGQ3cV7JYjfGdGemcAA3RrtBTpJSXK3lFGIeK4l8yHJ9l28ovIoU6uOKEtOCpqp2MZE6pdA8yk-faJ4UsdEI-sAoz2cNQhJoGtEFdF69Y60GekhawKHECDzzSjgAPPA1HMoLgtykFYBHvbLt2cIqrXNmkSTR7qwdpTKGUJRI5Sal-bAhubb2UIqbLna3PXm8BKIhX1h33m-PTyDiJNqhXHLvyfyvlDu8xL9la7RzZASF7J367e1AAk-78DmOI4yybYdnsJjudyViygU6iEUoXOF1PYwjRzwRVop1t5wb-FJUqoAOkbMlx3OFqPkscCwywj-RdVbQIYkAZgA4fCyMIeQNbibE17Z2V_3wy-HH6axXh9ZaI3agIHJeTedmZjqm9Rsz-6N6luFO7Gq2pXuE5Qob13lNvYwWyK50eggvwQ_M6R4b72ngqOBga8CwN3X9JBA_-Dcc0t_oPoTubsPUre6JnVF_Pqky4Zjwv_OELdrCcEqzMCtvOPyA7Uay3VWnJYIN5hiDqtNHl-6wZj3zoUhfOUAW_FSOCs1vw4VpbigwpbbkPYwxRKZC4dzjyFSdcNz79vRE-kn4QtLLwgo11UaSrX3I5vn3xiGBGOt8Rus74fQOPsD7pTqgPEoUtWdOVmf_3763AH9VyVY_tFosJdvSPuQxqU6YUpCuQoH9YR4xo_VQDXSpM0JB6pq02Q3txVmelN5iXmW88e7PbdCTq1kbJ65ZJAYzcOnMbEy9r75AXfmD_OXBmOqZstGOz8MTLGbQVBNLMoMRXe7oVUpChoetbbKwBqCDlmVWjaFCrkmTy6fLQhf9gVvlmUepXxAB1OACvwDyi6JhwjZclmePpehm_kk4B_YW-gONhNZr38_rJ4vLDtEDHub8RmZIR4v429kRIvZxbUdioqBmoO565fehzaAdOkA1a7dvev6EG_OqsjXy_ID8TNi1EiRaxUv2uzGBXREwQWlseCZVXyjMwgN15eNnXnCAV-Toi5YPjOrPWzqrHqIoxl7AWWhoCulRNvrrXrX4vaNgOVWgmB49CLglY2mddSgs-Z5ycY-aovo0ILetUiLG80CJ_m_85EbpAR6h8qx1yaV4Fdt2LVX-F27S7knTdpSJ7WDSqoVN4ikVtQrusMbTZL5xi92l0ngSvnRxL_pWWR2ndhAmMSLLkpCEtKK_454N7-74RIJVPMlRykqCpDf7ZmMhjw6jERSjuJ7jScAxgvxw9gL4NCLb8AUh7cabRuVYTZdviZ6rlizQb8-uF1bleZLrif8Co5QWNpU8G_jeOQFCUl9ttT0g&ap=4.1373]]>
+            </Impression>
+            <Impression>
+                <![CDATA[https://adrta.com/i?clid=we&paid=we&avid=80&plid=1679169502146577&caid=&siteId=0&kv1=720x1280&kv2=https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Famaze%2Fid1452526406%3Faxb%3D122&kv3=&kv4=180.211.19.226&priceBid=5.172201&publisherId=241&kv7=294&kv11=2c4e1dd3166948efa66c11d80d43f30c&kv12=6685a7f2df5d8af958ad870d55b5c03d&kv16=35.533501&kv17=129.317307&kv18=1452526406&kv19=00000000-0000-0000-0000-000000000000&kv26=iOS&kv28=apple&kv24=Mobile_InApp]]>
+            </Impression>
+            <Error>
+                <![CDATA[https://rtbtrack-sg.rtblab.net/vasterror?p=241&d=80&error=[ERRORCODE]]]>
+            </Error>
+            <Creatives>
+                <Creative id="1679169502146577">
+                    <Linear>
+                        <Duration>00:00:13</Duration>
+                        <Icons>
+                            <Icon program="" width="0" height="0" xPosition="" yPosition="" offset="0%" duration="00:00:00">
+                                <IconClicks>
+                                    <IconClickThrough/>
+                                </IconClicks>
+                                <StaticResource creativeType="image/jpeg">
+                                    <![CDATA[https://p0.ipstatp.com/origin/ad-site-i18n-sg/202009295d0d0c063b2fa7e849cf845f]]>
+                                </StaticResource>
+                            </Icon>
+                        </Icons>
+                        <TrackingEvents>
+                            <Tracking event="start">
+                                <![CDATA[https://api16-access-sg.pangle.io/api/ad/union/event_report/?event_type=4&extra=4AfhtQRp22DGOBvA5zI0lYVZ%2BYc7idK13g98NI41qhHq9mhg2WowlxaVMCnpX9aEnCvZlJ%2F4XnX9Y3ft9EE3jGS216hSKKUJysLKHORbKc81Ds4Sxiic56ezg9%2FtmkMhMDueovFcQdqIBjjQIvaw3gULJDxpbSMhKAyiOXkZsxDECKA1RsxOW5%2F88oxRcTKCn4yWQaHM9ovcXW%2FTrUL23NxcpMQHKTukpeH5hwZ2HoITNlreNZwP3iunFg%2BQpKC9uTJg2gIGj72uwT3FumttDtEdKek0xA%2BEXutep6cRecX13kV84TKlkBRfZHs7OBp1DHdgR2J69TbMK9Zb8kmX89so5F%2FtUTlo14L%2Bn5UyDLoglJBI6cbJMeUJjofXDa3UTeyDnUDgPclYhUsHZZjMXjjym3T2erKUbWYm5zoco6VVO4ewjr1k%2FbrZVn7urwVuS0qOvNCeB4SBQ0BpYedbukekPYy%2FvdksGG%2B2Ylskj8aBKYSQBioRhjQoe%2FKQHEWeQ6qp%2BVhYpzFaA2oOxdQQJxmUHaYDK6GZKY2jeEdnEY1AyIzmj2iyDM%2Bm1SN%2FGBACDJG7ZxuddysuTfYRZYqQmzJPajfI2WO5ZI0S3gMzLC4zItPpPGGNE0DsyLysAKq50TjDR0ltfWXsbORYzAjg9hGWb%2FASHxKKpbF%2BhSaHR55PmnUcA5l2qPfzpYlYVD67gUE6FKCpkveEEeB1rD5jwysDY%2BE7BvOA%2BayCZFl7hmfD8eYwH8j6RNCipoSkNsLMs8veOwosw5mrH05j81b02XR%2BRoZVgjV1VLnotNqdJtVLtC%2Bnv4OeZaZktAsxEXkR%2BtKQxM1Um%2BC%2Bp1PRpvsHD%2BJm2uWUpKOCAyzYyuCA0G2nYstsjneMSx7dY8XZQ1YFOd50giH0m8LREZkdxPkIVw1PrWK5XI3%2FO5dQp50llldaiJivSJ1ehMW2SwAWQ59dvF5VtHasLkWsbYi%2FAm6CwvRHAVS1fZxF44hTYT%2Btvtj9dRTSM5iCTw%2F3QlWtoTxULFQEkhmyknLua0B0x4GrFmidnd4aUhGqJgVpM2kaBdwc0HtO5x0XHmE1nnDox2awggQ1unQy80iqs6xQpA%2F%2BtBdUyapCpr8xyAf6V2zsIW%2F78fVmFlcw6mF20JQITM2oFAo3bdSbrj1DtF8ZpFp%2F52102WbJRKjrpadMDMvWMxcfM089YYP1HHx3w%2BCGe8Yux4RM89epZ9eiBAxx6aR%2FcTDl9FDGvd1dyqAYSzqlNSWUWVKq3ZnPnjEuh2alPfenvlDc65qc8DTduE1UmAYl3BmH1jVePcFbBdV2ANRzuuP4ZJKDudx0vT6TAhpIT9ErpOcXuRIm1LVVLsCCs3tG9TDuAMRa8h%2F1y6LSEl8G%2Ff3vPk34iRyGIxg4veak85ZayXFBUnuQpIrxm8i%2BfwkaUZZjm5LZyWcT6GMR9UqM0k8xeQlqKLGkoiixa14utl875UIwwyoqUyfEIiORc6KuN%2BYH5AL2eo804LV9vRHeT47HYhi5Lit3gggAlhEOylrA0%2FEGdL0dcZDrrlG9Q%2F28sRFs%2BX2sCGH7XI8Xte%2FWr9rIgK6%2FaDBaDktAWOl0%2Bb4tlOX%2FQn9iVfRWM2RvBwqhgTWpKHiOkhew5fMwz1%2Fg3fxoAQIKL0XJoP7QOGhzECgILlFChqMGlp4Dkk61fsxaZ9uwqKI43mtb8dVGIMcrL8SqXzYhtsVZbSLQ6k6bimkJRHFY5VUIrBNWlqgtMGXADOpUrouW%2FtW6uOrs5ITV8n2%2F3IuxwOToQxp%2FU3KqzeO0X54JLgJN0xKycbIYFq697EB7IeXUrefSVBm2ASIlE8THmiXbVCXkofbGroEPelzzXYd7dToYDlzzY8O3zM19bUbSj1vw0ldDtbTuqVqieLRBGo1do1uOFtI%2F5YJQpT4Cfir7%2F5dm66%2F88e54MLOW%2F%2BV0QHuIUqW3OTETgnyUCkg%3D&video_play_time=0]]>
+                            </Tracking>
+                            <Tracking event="complete">
+                                <![CDATA[https://api16-access-sg.pangle.io/api/ad/union/event_report/?event_type=6&extra=4AfhtQRp22DGOBvA5zI0lYVZ%2BYc7idK13g98NI41qhHq9mhg2WowlxaVMCnpX9aEnCvZlJ%2F4XnX9Y3ft9EE3jGS216hSKKUJysLKHORbKc81Ds4Sxiic56ezg9%2FtmkMhMDueovFcQdqIBjjQIvaw3gULJDxpbSMhKAyiOXkZsxDECKA1RsxOW5%2F88oxRcTKCn4yWQaHM9ovcXW%2FTrUL23NxcpMQHKTukpeH5hwZ2HoITNlreNZwP3iunFg%2BQpKC9uTJg2gIGj72uwT3FumttDtEdKek0xA%2BEXutep6cRecX13kV84TKlkBRfZHs7OBp1DHdgR2J69TbMK9Zb8kmX89so5F%2FtUTlo14L%2Bn5UyDLoglJBI6cbJMeUJjofXDa3UTeyDnUDgPclYhUsHZZjMXjjym3T2erKUbWYm5zoco6VVO4ewjr1k%2FbrZVn7urwVuS0qOvNCeB4SBQ0BpYedbukekPYy%2FvdksGG%2B2Ylskj8aBKYSQBioRhjQoe%2FKQHEWeQ6qp%2BVhYpzFaA2oOxdQQJxmUHaYDK6GZKY2jeEdnEY1AyIzmj2iyDM%2Bm1SN%2FGBACDJG7ZxuddysuTfYRZYqQmzJPajfI2WO5ZI0S3gMzLC4zItPpPGGNE0DsyLysAKq50TjDR0ltfWXsbORYzAjg9hGWb%2FASHxKKpbF%2BhSaHR55PmnUcA5l2qPfzpYlYVD67gUE6FKCpkveEEeB1rD5jwysDY%2BE7BvOA%2BayCZFl7hmfD8eYwH8j6RNCipoSkNsLMs8veOwosw5mrH05j81b02XR%2BRoZVgjV1VLnotNqdJtVLtC%2Bnv4OeZaZktAsxEXkR%2BtKQxM1Um%2BC%2Bp1PRpvsHD%2BJm2uWUpKOCAyzYyuCA0G2nYstsjneMSx7dY8XZQ1YFOd50giH0m8LREZkdxPkIVw1PrWK5XI3%2FO5dQp50llldaiJivSJ1ehMW2SwAWQ59dvF5VtHasLkWsbYi%2FAm6CwvRHAVS1fZxF44hTYT%2Btvtj9dRTSM5iCTw%2F3QlWtoTxULFQEkhmyknLua0B0x4GrFmidnd4aUhGqJgVpM2kaBdwc0HtO5x0XHmE1nnDox2awggQ1unQy80iqs6xQpA%2F%2BtBdUyapCpr8xyAf6V2zsIW%2F78fVmFlcw6mF20JQITM2oFAo3bdSbrj1DtF8ZpFp%2F52102WbJRKjrpadMDMvWMxcfM089YYP1HHx3w%2BCGe8Yux4RM89epZ9eiBAxx6aR%2FcTDl9FDGvd1dyqAYSzqlNSWUWVKq3ZnPnjEuh2alPfenvlDc65qc8DTduE1UmAYl3BmH1jVePcFbBdV2ANRzuuP4ZJKDudx0vT6TAhpIT9ErpOcXuRIm1LVVLsCCs3tG9TDuAMRa8h%2F1y6LSEl8G%2Ff3vPk34iRyGIxg4veak85ZayXFBUnuQpIrxm8i%2BfwkaUZZjm5LZyWcT6GMR9UqM0k8xeQlqKLGkoiixa14utl875UIwwyoqUyfEIiORc6KuN%2BYH5AL2eo804LV9vRHeT47HYhi5Lit3gggAlhEOylrA0%2FEGdL0dcZDrrlG9Q%2F28sRFs%2BX2sCGH7XI8Xte%2FWr9rIgK6%2FaDBaDktAWOl0%2Bb4tlOX%2FQn9iVfRWM2RvBwqhgTWpKHiOkhew5fMwz1%2Fg3fxoAQIKL0XJoP7QOGhzECgILlFChqMGlp4Dkk61fsxaZ9uwqKI43mtb8dVGIMcrL8SqXzYhtsVZbSLQ6k6bimkJRHFY5VUIrBNWlqgtMGXADOpUrouW%2FtW6uOrs5ITV8n2%2F3IuxwOToQxp%2FU3KqzeO0X54JLgJN0xKycbIYFq697EB7IeXUrefSVBm2ASIlE8THmiXbVCXkofbGroEPelzzXYd7dToYDlzzY8O3zM19bUbSj1vw0ldDtbTuqVqieLRBGo1do1uOFtI%2F5YJQpT4Cfir7%2F5dm66%2F88e54MLOW%2F%2BV0QHuIUqW3OTETgnyUCkg%3D&video_play_time=13]]>
+                            </Tracking>
+                            <Tracking event="start">
+                                <![CDATA[https://trk.svr-algorix.com/vtrk?info=wMTPyZGcmETPtZGcmATPwhXZmATPpBXYmMTP5RXYmATM1QTN9QWazZCMwQjMxIjMwYTM9QncmMzNzEjL00TbhZSN0EDMuMTPtZCO3MTMuQTPtJmJyITM9knYmATO2gjNx0DcmMGMzY2M0QGM4QWMxMmN2EmZlhDN5YjNxMDZkFTZ0MmM9Enc_wMnc&price=${AUCTION_PRICE}&hrq=2c4e1dd3166948ef&vtype=start]]>
+                            </Tracking>
+                            <Tracking event="complete">
+                                <![CDATA[https://trk.svr-algorix.com/vtrk?info=wMTPyZGcmETPtZGcmATPwhXZmATPpBXYmMTP5RXYmATM1QTN9QWazZCMwQjMxIjMwYTM9QncmMzNzEjL00TbhZSN0EDMuMTPtZCO3MTMuQTPtJmJyITM9knYmATO2gjNx0DcmMGMzY2M0QGM4QWMxMmN2EmZlhDN5YjNxMDZkFTZ0MmM9Enc_wMnc&price=${AUCTION_PRICE}&hrq=2c4e1dd3166948ef&vtype=complete]]>
+                            </Tracking>
+                        </TrackingEvents>
+                        <VideoClicks>
+                            <ClickThrough>
+                                <![CDATA[https://apps.apple.com/kr/app/id1484304301]]>
+                            </ClickThrough>
+                            <ClickTracking>
+                                <![CDATA[https://api16-access-sg.pangle.io/api/ad/union/redirect/?active_extra=j6adfF701TDUMYmw2ix7EOZyRtnaKsttHBt6bkLpTWNQkbF24axO6dKRMyNlf5RNWpE4yzqN%2BmO15xm%2BMGroRQ%3D%3D&call_back=4OeszuGPR9JzWtROWbsgyHLDUFLyRnQk14p7yTH%2BYY1owYbtxELyuAuhsZsHcNYaZp9X%2BNwb8gPYCBIXAyRzow%3D%3D&click_source=1&extra=reIx7s4g3xTx27B3EumGLdY%2BtN1QtpLcMz3O96FUslpPxgFOmbjJG58L4AaFgVpvtMMhhJ4DzpkP%2BBdaJQiswj%2F3xBsJPKm0M95Ca%2BG6uF5iByVi%2Fsie8SlVWYwY9VDCAxI0nINJ%2BjgZEZMkgYq3FZJ8C9fvjuNOeNK0aib86SJvXNOnFBOhBUuyvptyfA%2BzRPEYiC%2Bkajc2t6Fpb%2FR%2BY%2F8ZZuJqVz%2FPEuw6icJ62WW9xIcokC11wdIDiSuLsGBmx66X3ZulF7A0DzBhFNviroNyZRH8kahYihjkPVzB7mwXVMmqQqa%2FMcgH%2Blds7CFv9zTmxlczB707cm933gvU%2F83IRpsb5%2BEkn4FwSB27UBeo8xwUo%2FDLKPlUO00u1LFQn3nt5gbEFFSWYydRjk3Yl%2FEis2hbCDkVfq4APDLOMTWyKQyUMaFSytRkUDZ82JN139lPpXw7bWEkqKARL4Zd1iRdwzsPQ2JtSegyDtwIuG9bb%2Bb61y4jE5JKQBaM88yqxsXSnQbsuTOK%2FE5OfUWSa2zun00YS9FDbOu%2Fm9lyo3WdGkUhgJfL000%2BYflm7RmEVMijiu4RtuNWB3tsCLNeD8ut8%2FCmex%2FPyRDbhdMHjhUVxHGvT6lzC9GvHy7xGkrP2WLUZkfT%2FdX%2FmYOVINJG2Iq3j%2BPuaoVJcqlFctaAUqGu32fEVuvu98tKJ%2FsQYAd2Zp9X%2BNwb8gPYCBIXAyRzow%3D%3D&is_dsp=1&pack_time=1602212400.56&req_id=2c4e1dd3166948efa66c11d80d43f30cu8180&rit=945236149&source_type=1&ttdsp_adx_index=101&use_pb=1]]>
+                            </ClickTracking>
+                            <ClickTracking>
+                                <![CDATA[https://apac.trk.svr-algorix.com/clk?info=wMTPyZGcmETPtZGcmATPwhXZmATPpBXYmMTP5RXYmATM1QTN9QWazZCMwQjMxIjMwYTM9QncmMzNzEjL00TbhZSN0EDMuMTPtZCO3MTMuQTPtJmJyITM9knYmATO2gjNx0DcmMGMzY2M0QGM4QWMxMmN2EmZlhDN5YjNxMDZkFTZ0MmM9Enc_wMnc&price=${AUCTION_PRICE}&hrq=2c4e1dd3166948ef]]>
+                            </ClickTracking>
+                        </VideoClicks>
+                        <MediaFiles>
+                            <MediaFile delivery="progressive" type="video/mp4" bitrate="1853" width="720" height="720">
+                                <![CDATA[https://v16-ad.byteoversea.com/fb47ff98f032e3447915d8cd62fe0479/5f802070/video/tos/alisg/tos-alisg-v-0000/c4470e3647564967adce5ab60a29c023/toutiao.mp4]]>
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+                <Creative>
+                    <CompanionAds>
+                        <Companion id="post-roll" width="720" height="720">
+                            <CompanionClickThrough>
+                                <![CDATA[https://apps.apple.com/kr/app/id1484304301]]>
+                            </CompanionClickThrough>
+                            <CompanionClickTracking>
+                                <![CDATA[https://api16-access-sg.pangle.io/api/ad/union/redirect/?active_extra=j6adfF701TDUMYmw2ix7EOZyRtnaKsttHBt6bkLpTWNQkbF24axO6dKRMyNlf5RNWpE4yzqN%2BmO15xm%2BMGroRQ%3D%3D&call_back=4OeszuGPR9JzWtROWbsgyHLDUFLyRnQk14p7yTH%2BYY1owYbtxELyuAuhsZsHcNYaZp9X%2BNwb8gPYCBIXAyRzow%3D%3D&click_source=2&extra=reIx7s4g3xTx27B3EumGLdY%2BtN1QtpLcMz3O96FUslpPxgFOmbjJG58L4AaFgVpvtMMhhJ4DzpkP%2BBdaJQiswj%2F3xBsJPKm0M95Ca%2BG6uF5iByVi%2Fsie8SlVWYwY9VDCAxI0nINJ%2BjgZEZMkgYq3FZJ8C9fvjuNOeNK0aib86SJvXNOnFBOhBUuyvptyfA%2BzRPEYiC%2Bkajc2t6Fpb%2FR%2BY%2F8ZZuJqVz%2FPEuw6icJ62WW9xIcokC11wdIDiSuLsGBmx66X3ZulF7A0DzBhFNviroNyZRH8kahYihjkPVzB7mwXVMmqQqa%2FMcgH%2Blds7CFv9zTmxlczB707cm933gvU%2F83IRpsb5%2BEkn4FwSB27UBeo8xwUo%2FDLKPlUO00u1LFQn3nt5gbEFFSWYydRjk3Yl%2FEis2hbCDkVfq4APDLOMTWyKQyUMaFSytRkUDZ82JN139lPpXw7bWEkqKARL4Zd1iRdwzsPQ2JtSegyDtwIuG9bb%2Bb61y4jE5JKQBaM88yqxsXSnQbsuTOK%2FE5OfUWSa2zun00YS9FDbOu%2Fm9lyo3WdGkUhgJfL000%2BYflm7RmEVMijiu4RtuNWB3tsCLNeD8ut8%2FCmex%2FPyRDbhdMHjhUVxHGvT6lzC9GvHy7xGkrP2WLUZkfT%2FdX%2FmYOVINJG2Iq3j%2BPuaoVJcqlFctaAUqGu32fEVuvu98tKJ%2FsQYAd2Zp9X%2BNwb8gPYCBIXAyRzow%3D%3D&is_dsp=1&pack_time=1602212400.56&req_id=2c4e1dd3166948efa66c11d80d43f30cu8180&rit=945236149&source_type=1&ttdsp_adx_index=101&use_pb=1]]>
+                            </CompanionClickTracking>
+                            <TrackingEvents>
+                                <Tracking event="creativeView"/>
+                                <Tracking event="creativeView">
+                                    <![CDATA[https://trk.svr-algorix.com/vtrk?info=wMTPyZGcmETPtZGcmATPwhXZmATPpBXYmMTP5RXYmATM1QTN9QWazZCMwQjMxIjMwYTM9QncmMzNzEjL00TbhZSN0EDMuMTPtZCO3MTMuQTPtJmJyITM9knYmATO2gjNx0DcmMGMzY2M0QGM4QWMxMmN2EmZlhDN5YjNxMDZkFTZ0MmM9Enc_wMnc&price=${AUCTION_PRICE}&hrq=2c4e1dd3166948ef&vtype=companioncreativeView]]>
+                                </Tracking>
+                            </TrackingEvents>
+                            <StaticResource creativeType="image/jpeg">
+                                <![CDATA[https://p16-ad.byteoversea.com/ad-union-i18n-api/02a1a231991e44c50b4d1d1ecd4e08a7~tplv-large.jpg]]>
+                            </StaticResource>
+                            <CompanionClickTracking>
+                                <![CDATA[https://trk.svr-algorix.com/vtrk?info=wMTPyZGcmETPtZGcmATPwhXZmATPpBXYmMTP5RXYmATM1QTN9QWazZCMwQjMxIjMwYTM9QncmMzNzEjL00TbhZSN0EDMuMTPtZCO3MTMuQTPtJmJyITM9knYmATO2gjNx0DcmMGMzY2M0QGM4QWMxMmN2EmZlhDN5YjNxMDZkFTZ0MmM9Enc_wMnc&price=${AUCTION_PRICE}&hrq=2c4e1dd3166948ef&vtype=companionClickTracking]]>
+                            </CompanionClickTracking>
+                        </Companion>
+                    </CompanionAds>
+                </Creative>
+            </Creatives>
+            <Description>
+                <![CDATA[초아가 초아하는 엘리먼트9,태권브이와 함께 출격하라!]]>
+            </Description>
+            <Survey/>
+            <Extensions>
+                <Extension type="Extra">
+                    <CTA>
+                        <![CDATA[지금 다운로드]]>
+                    </CTA>
+                    <SystemIcon>
+                        <![CDATA[https://sf1-be-pack.pglstatp-toutiao.com/img/ad.union.api/07c04164de3140d2cfe4bdd9812aef22~c1_0x0_q100.png]]>
+                    </SystemIcon>
+                    <FullStar>
+                        <![CDATA[https://sf1-be-pack.pglstatp-toutiao.com/img/ad.union.api/48c275deda9f2daa92acccf8218fc59f~c1_0x0_q100.jpeg]]>
+                    </FullStar>
+                    <HalfStar>
+                        <![CDATA[https://sf1-be-pack.pglstatp-toutiao.com/img/ad.union.api/b273598ab25fec09a467d2b895e3c53e~c1_0x0_q100.jpeg]]>
+                    </HalfStar>
+                    <EmptyStar>
+                        <![CDATA[https://sf1-be-pack.pglstatp-toutiao.com/img/ad.union.api/fedbae142b79804e383eed3f4d06e9d5~c1_0x0_q100.jpeg]]>
+                    </EmptyStar>
+                    <Review>
+                        <![CDATA[https://sf1-be-pack.pglstatp-toutiao.com/img/ad.union.api/297845a2690ec96bd1290a0a289ab373~c1_0x0_q100.jpeg]]>
+                    </Review>
+                    <MoPubCtaText/>
+                </Extension>
+            </Extensions>
+            <Impression>
+                <![CDATA[https://apac.trk.svr-algorix.com/win?info=wMTPyZGcmETPtZGcmATPwhXZmATPpBXYmMTP5RXYmATM1QTN9QWazZCMwQjMxIjMwYTM9QncmMzNzEjL00TbhZSN0EDMuMTPtZCO3MTMuQTPtJmJyITM9knYmATO2gjNx0DcmMGMzY2M0QGM4QWMxMmN2EmZlhDN5YjNxMDZkFTZ0MmM9Enc_wMnc&price=${AUCTION_PRICE}&hrq=2c4e1dd3166948ef&pb===wZfV3aQZTa58mYnVzcqlVdapGNYRkbwFjMXVGbxgjYzZzVmB3a1UHRYVETzEEbt00bw92a0J2VXJ3YltWeTJnUsh2THR2bJ9FZ5hEOkhEVsNDba12TNV3RwBza0kDZhRnbxkFd2x2XLljNiZFekNER5QlRipXOsRjdCBVYPBFNKRnYZJjT1QzNORGelFURpdUNw8WO6l0ZwkDcnZ2TGRVeItEd2EWUn9WVQRTWKNTdx9lRqpkUD1iZS9VUKdTdV9mNYdFcvRWcaRTefdXOnZTTtc2RG9GaqtmQ0VVRq9Ub0JjTyU0Q1h1U4I3aahGe4EnV4tWYycWS5IEUzlVajZjb3QUaPlVOzZlWD92dONnTLNjR4YzbFljWTBXRkRFO4lWLZdXWQVDOmpWVpNlTqt2TrhkdNBDRj5ENOlFO1E1QpFlZzETW1V0U2EjMWZ3YJdGdUhTb4EEdNtGd4YlMX9kbupFc1skRyYmcalTWa1EOWNDRSF2bn5WUZ1UbyIHb2YTVYhlNVFkdqxWdulFOMNDb5gVSOlmd9QnJwgTPkZSM0ITPw9jbpd3L0VmbuIWYsJGdy5yZz1yajFmc0JGdy9yL6MHc0RHa_==Ha]]>
+            </Impression>
+            <Impression>
+                <![CDATA[https://apac.trk.svr-algorix.com/imp?info=wMTPyZGcmETPtZGcmATPwhXZmATPpBXYmMTP5RXYmATM1QTN9QWazZCMwQjMxIjMwYTM9QncmMzNzEjL00TbhZSN0EDMuMTPtZCO3MTMuQTPtJmJyITM9knYmATO2gjNx0DcmMGMzY2M0QGM4QWMxMmN2EmZlhDN5YjNxMDZkFTZ0MmM9Enc_wMnc&price=${AUCTION_PRICE}&hrq=2c4e1dd3166948ef]]>
+            </Impression>
+        </InLine>
+    </Ad>
+</VAST>
+```
 
 ### Interstitial-Video
 ``` json
