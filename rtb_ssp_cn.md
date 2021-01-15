@@ -403,22 +403,7 @@ HTTP 204 No Content 表示不bid
 | deeplinkfallbackurl | string | deeplink 失败时的上报链接 |
 
 ### b. impression/click beacon
-DSP在bidresponse中向Mintegral ADX返回nurl和展示监测链接（其中，展示监测链接可选，DSP可不返回）。
-当广告成功在客户端展示时，MTG ADX向DSP同时调nurl和展示监测链接。
 
-为了缩小展示数据差异，建议对于所有广告形式，DSP都返回独立的展示监测链接回收展示数据。
-
-Native image和Native video，DSP通过Native Ads协议的imptrackers字段返回展示监测链接；
-
-Rewarded video 和 Interstitial video，DSP通过VAST的\<impression>标签返回展示监测链接；
-
-Interative ads和Banner，DSP通过 Bidresponse.Seatbid.Bid.Ext.Imptrakers 返回展示监测链接。
-
-### c. Price & Macro substitution
-
-Mintegral 使用的价格宏是`${AUCTION_PRICE}`, 默认使用美元明文。
-
-### d. tracking
 Mintegral会将用于计费的展示上报在放bid.nurl (即win notice)中, 其它的展示和点击上报位置见下表
 
 | 广告类型 | 上报类型  |  位置  | 
@@ -427,8 +412,14 @@ Mintegral会将用于计费的展示上报在放bid.nurl (即win notice)中, 其
 | Banner | Click | 返回的html代码块中 , 以及bid.ext.clicktrackers|
 | Video | Impression | vast的 ad.Inline.Impression|
 | Video | Click | vast中的 ad.Inline.Creatives.Linear.VideoClicks.ClickTracking |
-| Native | Impression | native 返回的 imptrackers |
+| Native | Impression | native ads协议返回的 imptrackers |
 | Native | Click | native 返回的 link.clicktrackers |
+
+### c. Price & Macro substitution
+
+Mintegral 使用的价格宏是`${AUCTION_PRICE}`, 默认使用美元明文。
+
+### d. tracking
 
 ## 3. Code table
 
