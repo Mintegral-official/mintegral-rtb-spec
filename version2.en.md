@@ -12,8 +12,7 @@ Moreover, this specification does not contain description of general RTB protoco
 
 ## Table of Contents
 
-* [1. cookie sync](#1-cookie-sync)
-* [2. Request specification](#3-request-specification)
+* [1. Request specification](#3-request-specification)
   * [a. Endpoint URL](#a-endpoint-url)
   * [b. OpenRTB Version HTTP Header](#b-openrtb-version-http-header)
   * [c. Bid request parameters](#c-bid-request-parameters)
@@ -30,7 +29,7 @@ Moreover, this specification does not contain description of general RTB protoco
     * [video Object](#video-object)
     * [audio Object](#audio-object)
     * [native Object](#native-object)
-* [3. Response specification](#4-response-specification)
+* [2. Response specification](#4-response-specification)
   * [a. Bid response parameters](#a-bid-response-parameters)
     * [Bid Response Object (Top Level)](#bid-response-object-top-level)
     * [seatbid Object](#seatbid-object)
@@ -43,34 +42,11 @@ Moreover, this specification does not contain description of general RTB protoco
     * [fluct transmits according to the following conditions (click beacon):](#fluct-transmits-according-to-the-following-conditions-click-beacon)
   * [c. Macro substitution](#c-macro-substitution)
   * [d. Click Measuring](#d-click-measuring)
-* [4. Code table](#5-code-table)
-* [5. Bid Request/Response Examples](#6-bid-requestresponse-examples)
+* [3. Code table](#5-code-table)
+* [4. Bid Request/Response Examples](#6-bid-requestresponse-examples)
 
 
-
-## 1. cookie sync
-
-Usually the following sync will be performed, however we are also able to provide specified flows separately.
-
-1. SSP delivers sync image tags of DSP to ad inventories.
-2. DSP redirects to SSP’s sync URL when received access to sync tag.
-3. DSP adds an ID parameter to sync URL as a notification to SSP.
-
-DSP should prepare sync tags for SSP in advance. (DSP reponsibility)
-
-Currently we only support image sync tags and https requests.
-
-Below is an example of sync URLs of mintegral. HTTPs sync is also supported.
-
-    https://cs.mintegral.com/sync/?from=[DSP_NAME]&id=[DSP_USER_ID]
-
-The DSP_NAME parameter will be provided by SSP beforehand (SSP responsibility), please contact SSP for that.
-
-The expiry date of sync is default to 30 days, however it can also be customized to any length. Below is an example of a sync with 90 days of expiry date.
-
-    https://cs.mintegral.com/sync/?from=your_dsp&id=XXXXXX&expire=90
-
-## 2. Request specification
+## 1. Request specification
 
 ### a. Endpoint URL
 
@@ -408,7 +384,7 @@ Serialize format: JSON only.
 |----------|-------- |---------------------------------|
 | coppa    | integer | 表示该次展示是否遵从 COPPA 法案， 0-不遵从；1-遵从； 对于遵从 COPPA 法案的展示，DSP 必须保证返回的广告的内容和素材符合 COPPA 广告规定 |
 
-## 3. Response specification
+## 2. Response specification
 ### a. Bid response parameters
 DSP 应该使用JSON格式序列化Bid的信息
 
@@ -497,9 +473,9 @@ Mintegral 支持以下宏替换
 |${AUCTION_PRICE}	 |结算价格 |	加密后的结算价格，具体请参考结算价格解密|
 ### d. Click Measuring
 
-## 4. Code table
+## 3. Code table
 
-## 5. Bid Request/Response Examples
+## 4. Bid Request/Response Examples
 
 ### Request Examples
 See [version2.req-examples.md](./version2.req-examples.md) for details.
