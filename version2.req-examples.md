@@ -550,43 +550,6 @@
 			"ext": {
 				"orientation": 1,
 				"videotype": 1,
-				"videotemplate": [{
-						"id": 1,
-						"name": "middle_black_screen",
-						"videow": 720,
-						"videoh": 1280,
-						"videoorientation": 1
-					},
-					{
-						"id": 2,
-						"name": "middle_fur_screen",
-						"videow": 720,
-						"videoh": 1280,
-						"videoorientation": 1
-					},
-					{
-						"id": 6,
-						"name": "stretch_screen",
-						"videow": 720,
-						"videoh": 1280,
-						"videoorientation": 1
-					},
-					{
-						"id": 3,
-						"name": "above_video",
-						"videoorientation": 2
-					},
-					{
-						"id": 4,
-						"name": "storekit_video",
-						"videoorientation": 2
-					},
-					{
-						"id": 5,
-						"name": "image_video",
-						"videoorientation": 2
-					}
-				],
 				"videoendtype": [
 					1,
 					2
@@ -824,43 +787,6 @@
 			"ext": {
 				"orientation": 1,
 				"videotype": 2,
-				"videotemplate": [{
-						"id": 1,
-						"name": "middle_black_screen",
-						"videow": 720,
-						"videoh": 1280,
-						"videoorientation": 1
-					},
-					{
-						"id": 2,
-						"name": "middle_fur_screen",
-						"videow": 720,
-						"videoh": 1280,
-						"videoorientation": 1
-					},
-					{
-						"id": 6,
-						"name": "stretch_screen",
-						"videow": 720,
-						"videoh": 1280,
-						"videoorientation": 1
-					},
-					{
-						"id": 3,
-						"name": "above_video",
-						"videoorientation": 2
-					},
-					{
-						"id": 4,
-						"name": "storekit_video",
-						"videoorientation": 2
-					},
-					{
-						"id": 5,
-						"name": "image_video",
-						"videoorientation": 2
-					}
-				],
 				"videoendtype": [
 					1,
 					2
