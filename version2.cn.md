@@ -424,9 +424,9 @@ HTTP 204 No Content 表示不bid
 #### bid ext object
 | 参数名称       | 类型   | 描述                         |
 |----------------|--------------|-------------------------------------------------------|
-| imptrackers | array of strings | 展示监测链接 |
-| clicktrackers | array of strings | 点击监测链接 |
-| click_url | string | 点击链接，落地页 | 
+| imptrackers | array of strings | 展示监测链接(非标准ortb字段, 部分流量不适用) |
+| clicktrackers | array of strings | 点击监测链接(非标准ortb字段, 部分流量不适用) |
+| click_url | string | 点击链接，落地页(非标准ortb字段, 部分流量不适用) | 
 | deeplink | string | deeplink 链接 |
 | deeplinkfallbackurl | string | deeplink 失败时的上报链接 |
 
