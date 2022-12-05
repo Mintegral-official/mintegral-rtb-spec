@@ -353,12 +353,13 @@ Serialize format: JSON only.
 | didmd5         | string  | 硬件设备 ID，安卓传 IMEI，使用 md5 哈希算法；   |
 | dpidsha1       | string | 设备平台 ID，安卓传 Android ID，使用 SHA1 哈希算法； |
 | dpidmd5        | string | 设备平台 ID，安卓传 Android ID，使用 md5 哈希算法；  |
+| oaid           | string | oaid；  |
 | ext            | device-ext object | device 扩展字段 ｜
 
 #### device-ext Object
 | 字段 | 类型    | 描述       |
 |----------|-------- |---------------------------|
-| oaid    | string | oaid  |
+| ~~oaid~~    | string | oaid  |
 
 #### geo Object
 
