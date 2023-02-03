@@ -77,7 +77,7 @@ Serialize format: JSON only.
 
 #### Bid Request Object (Top Level)
 
-|  字段    | 类型|   描述|
+|  Attribute    | Type|   Description|
 |---|---|---|
  | id |      string; required |         MintegralADX提供的bidrequest唯一标识|
  | imp| array of imp objects; required  |一次请求包含一个或以上的impressionobject；每个impressionobject代表一个广告位的请求；具体见imp参数说明 |
